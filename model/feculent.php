@@ -1,35 +1,35 @@
 <?php
 
-require_once "./DAO.php";
+require_once "./dao.php";
 
-class Candidature
+class feculent
 {
 
-    private $id_Candidature;
-    private $name;
-    private $firstname;
-    private $email;
-    private $phone;
-    private $motivation;
-    private $id_Job;
+    private $idFeculent;
+    private $productName;
+    private $originPlant;
+    private $transform;
+    private $cooked;
+    
+    
    
-    public function __construct($name, $firstname, $email, $phone, $motivation, $id_Job)
+    public function __construct($productName, $originPlant, $transform, $cooked,)
     {
-        $this->name = $name;
-        $this->firstname = $firstname;
-        $this->email = $email;
-        $this->phone = $phone;
-        $this->motivation = $motivation;
-        $this->id_Job = $id_Job;
+        $this->productName = $productName;
+        $this->originPlant = $originPlant;
+        $this->transform = $transform;
+        $this->cooked = $cooked;
+        
+        
     }
 
-    /*public static function getAllCandidature()
+    /*public static function getAllfeculent()
     {
 
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
 
-        $stmt = $dbh->prepare("SELECT * FROM Candidature;");
+        $stmt = $dbh->prepare("SELECT * FROM feculent;");
         $rows = $stmt->fetchAll();
 
         return $rows;
@@ -37,58 +37,57 @@ class Candidature
         
     }*/
     
-    public static function getAllCandidature(){
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM Candidature;");
+    public static function getAllfeculent(){
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
+        $stmt = $dbh->prepare("SELECT * FROM feculent;");
         $stmt->execute();
         
         return $stmt->fetchAll();
     }
 
-    public function createCandidature()
+    public function createfeculent()
     {
 
-        $request = "INSERT INTO Candidature (Name, Firstname, Email, Phone, Motivation, id_Job) 
-            VALUES (:Name, :Firstname, :Email, :Phone, :Motivation, :id_Job)";
+        $request = "INSERT INTO feculent (productName, originPlant, transform, cooked,) 
+            VALUES (:productName, :originPlant, :transform, :cooked)";
 
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
 
         $stmt = $dbh->prepare($request);
 
-        $stmt->bindParam(":Name", $this->name);
-        $stmt->bindParam(":Firstname", $this->firstname);
-        $stmt->bindParam(":Email", $this->email);
-        $stmt->bindParam(":Phone", $this->phone);
-        $stmt->bindParam(":Motivation", $this->motivation);
-        $stmt->bindParam(":id_Job", $this->id_Job);
+        $stmt->bindParam(":productName", $this->productName);
+        $stmt->bindParam(":originPlant", $this->originPlant);
+        $stmt->bindParam(":transform", $this->transform);
+        $stmt->bindParam(":cooked", $this->cooked);
+   
 
         $stmt->execute();
     }
 
-    public static function getCandidatureById($id_Candidature)
+    public static function getfeculentById($idFeculent)
     {
 
-        $request = "SELECT * FROM Candidature WHERE Id_Candidature = :id_Candidature";
+        $request = "SELECT * FROM feculent WHERE Idfeculent = :idfeculent";
 
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
 
         $stmt = $dbh->prepare($request);
-        $stmt->bindParam(":id_Candidature", $id_Candidature);
+        $stmt->bindParam(":idFeculent", $idFeculent);
         $stmt->execute();
         $row = $stmt->fetch();
 
         return $row;
     }
 
-    public static function getCandidatureForJob($id_Job){
+    /*public static function readByfeculentF($id_Job){
 
-        $request = "SELECT * FROM Candidature WHERE id_Job = :id_Job";
+        $request = "SELECT * FROM feculent WHERE id_Job = :id_Job";
 
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
 
         $stmt = $dbh->prepare($request);
         $stmt->bindParam(":id_Job", $id_Job);
@@ -97,22 +96,20 @@ class Candidature
 
         return $rows;
 
-    }
+    }*/
 
-    public function updateCandidature(){
-        $dao = new DAO();
-        $dbh =$dao->getDbh();
+    public function updatefeculent(){
+        $Dao = new Dao();
+        $dbh =$Dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE Candidature SET (Name, Firstname, Email, Phone, Motivation, id_Job) 
-        VALUES (:Name, :Firstname, :Email, :Phone, :Motivation, :id_Job");
+        $stmt = $dbh->prepare("UPDATE feculent SET (productName, originPlant, transform, cooked,) 
+        VALUES (:productName, :originPlant, :transform, :cooked,");
        
 
-       $stmt->bindParam(":Name", $this->name);
-       $stmt->bindParam(":Firstname", $this->firstname);
-       $stmt->bindParam(":Email", $this->email);
-       $stmt->bindParam(":Phone", $this->phone);
-       $stmt->bindParam(":Motivation", $this->motivation);
-       $stmt->bindParam(":id_Job", $this->id_Job);
+       $stmt->bindParam(":productName", $this->productName);
+       $stmt->bindParam(":originPlant", $this->originPlant);
+       $stmt->bindParam(":transform", $this->transform);
+       $stmt->bindParam(":cooked", $this->cooked);
         
       return $stmt->execute();
     }
@@ -120,11 +117,11 @@ class Candidature
 
 
 
-    public static function deleteCandidatureById($id_Candidature){
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM Candidature WHERE Id_Candidature = :id_Candidature;");
-         $stmt->bindParam("id_Candidature",$id_Candidature);
+    public static function deletefeculentById($idFeculent){
+        $Dao = new Dao();
+        $dbh = $Dao->getDbh();
+        $stmt = $dbh->prepare("DELETE FROM feculent WHERE idFeculent = :idFeculent;");
+         $stmt->bindParam("idFeculent",$idFeculent);
          $stmt->execute();
  
         
@@ -133,81 +130,81 @@ class Candidature
 
 
     /**
-     * Get the value of name
+     * Get the value of productName
      */ 
-    public function getName()
+    public function getproductName()
     {
-        return $this->name;
+        return $this->productName;
     }
 
     /**
-     * Set the value of name
+     * Set the value of productName
      *
      * @return  self
      */ 
-    public function setName($name)
+    public function setproductName($productName)
     {
-        $this->name = $name;
+        $this->productName = $productName;
 
         return $this;
     }
 
     /**
-     * Get the value of firstname
+     * Get the value of originPlant
      */ 
-    public function getFirstname()
+    public function getoriginPlant()
     {
-        return $this->firstname;
+        return $this->originPlant;
     }
 
     /**
-     * Set the value of firstname
+     * Set the value of originPlant
      *
      * @return  self
      */ 
-    public function setFirstname($firstname)
+    public function setoriginPlant($originPlant)
     {
-        $this->firstname = $firstname;
+        $this->originPlant = $originPlant;
 
         return $this;
     }
 
     /**
-     * Get the value of email
+     * Get the value of transform
      */ 
-    public function getEmail()
+    public function gettransform()
     {
-        return $this->email;
+        return $this->transform;
     }
 
     /**
-     * Set the value of email
+     * Set the value of transform
      *
      * @return  self
      */ 
-    public function setEmail($email)
+    public function settransform($transform)
     {
-        $this->email = $email;
+        $this->transform = $transform;
 
         return $this;
     }
 
     /**
-     * Get the value of phone
+     * Get the value of cooked
      */ 
-    public function getPhone()
+    public function getcooked()
     {
-        return $this->phone;
+        return $this->cooked;
     }
 
     /**
-     * Set the value of phone
+     * Set the value of cooked
      *
      * @return  self
      */ 
-    public function setPhone($phone)
+    public function setcooked($cooked)
     {
-        $this->phone = $phone;
+        $this->cooked = $cooked;
 
         return $this;
     }
@@ -253,21 +250,21 @@ class Candidature
     }
 
     /**
-     * Get the value of id_Candidature
+     * Get the value of idFeculent
      */ 
-    public function getId_Candidature()
+    public function getidFeculent()
     {
-        return $this->id_Candidature;
+        return $this->idFeculent;
     }
 
     /**
-     * Set the value of id_Candidature
+     * Set the value of idFeculent
      *
      * @return  self
      */ 
-    public function setId_Candidature($id_Candidature)
+    public function setidFeculent($idFeculent)
     {
-        $this->id_Candidature = $id_Candidature;
+        $this->idFeculent = $idFeculent;
 
         return $this;
     }
