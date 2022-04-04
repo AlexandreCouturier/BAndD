@@ -1,6 +1,6 @@
 <?php
 
-class DAO{
+class Dao{
 
     private $host="localhost";
     private $port = "8889";
