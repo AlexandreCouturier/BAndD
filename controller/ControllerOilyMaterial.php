@@ -5,14 +5,14 @@ Class ControllerOilyMaterial{
     public static function getAllOilyMaterial(){
 
      $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
-     require_once /* "../../Front/frontOilyMaterial/readAllOilyMaterial.php";*/
+     require_once "../view/readAllOilyMaterial.php";
     }
 
     public static function getOilyMaterialById($idOilyMaterial){
         
 
         $oilyMaterial = OilyMaterial::getOilyMaterialById($idOilyMaterial);
-        require_once /*"../../Front/frontOilyMaterial/readOilyMaterialById.php";*/
+        require_once "../view/readOilyMaterialById.php";
     }
 
     public static function createOilyMaterial($post){
