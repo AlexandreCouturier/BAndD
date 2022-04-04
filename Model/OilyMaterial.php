@@ -144,7 +144,7 @@ class OilyMaterial{
 
         $stmt = $dbh->prepare("INSERT INTO oilyMaterial (productName,state,origin,processedProduct,consumableOrIngredient) 
         VALUES(:productName,:state,:origin,:processedProduct,:consumableOrIngredient);");
-        
+
         $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':state',$this->state);
         $stmt->bindParam(':origin', $this->origin);
@@ -155,12 +155,12 @@ class OilyMaterial{
 
     }
 
-    public static function getCandidateById($idOilyMaterial){
+    public static function getOilyMaterialById($idOilyMaterial){
 
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM Candidate WHERE idCandidate = :idCandidate;");
-        $stmt->bindParam("idCandidate",$idOilyMaterial);
+        $stmt = $dbh->prepare("SELECT * FROM Candidate WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
      
         return $stmt->fetch();
@@ -175,11 +175,11 @@ class OilyMaterial{
         return $stmt->fetchAll();
     }
 
-    public function uporigin(){
+    public function updateOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE Candidate SET state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient, productName=:productName WHERE idCandidate = :idCandidate;");
+        $stmt = $dbh->prepare("UPDATE Candidate SET state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient, productName=:productName WHERE idOilyMaterial = :idOilyMaterial;");
 
        
 
@@ -192,11 +192,11 @@ class OilyMaterial{
       return $stmt->execute();
     }
 
-    public static function deleteoriginById($idOilyMaterial){
+    public static function deleteOilyMaterialById($idOilyMaterial){
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM Candidate WHERE idCandidate = :idCandidate;");
-        $stmt->bindParam("idCandidate",$idOilyMaterial);
+        $stmt = $dbh->prepare("DELETE FROM Candidate WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
          
     }
