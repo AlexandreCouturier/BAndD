@@ -1,6 +1,6 @@
 <?php
 
-require "c:/wamp64/www/BAndD/Model/DAO.php";
+require "c:/wamp64/www/BAndD/model/DAO.php";
 
 class OilyMaterial{
     private $idOilyMaterial;
@@ -156,21 +156,20 @@ class OilyMaterial{
     }
 
     public static function getOilyMaterialById($idOilyMaterial){
-
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM Candidate WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("SELECT * FROM oilyMaterial WHERE idOilyMaterial = :idOilyMaterial;");
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
      
         return $stmt->fetch();
     }
      
-    public static function getAllCandidate(){
+    public static function getAllOilyMaterial(){
         $dao = new DAO();
         $dbh = $dao->getDbh();
      
-        $stmt = $dbh->prepare("SELECT * FROM Candidate;");
+        $stmt = $dbh->prepare("SELECT * FROM oilyMaterial;");
         $stmt->execute();
         return $stmt->fetchAll();
     }
@@ -179,15 +178,13 @@ class OilyMaterial{
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE Candidate SET state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient, productName=:productName WHERE idOilyMaterial = :idOilyMaterial;");
-
+        $stmt = $dbh->prepare("UPDATE oilyMaterial SET state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient, productName=:productName WHERE idOilyMaterial = :idOilyMaterial;");
        
-
+        $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':state',$this->state);
         $stmt->bindParam(':origin', $this->origin);
         $stmt->bindParam(':processedProduct',$this->processedProduct);
         $stmt->bindParam(':consumableOrIngredient',$this->consumableOrIngredient);
-        $stmt->bindParam(':productName',$this->productName);
         
       return $stmt->execute();
     }
@@ -195,12 +192,9 @@ class OilyMaterial{
     public static function deleteOilyMaterialById($idOilyMaterial){
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM Candidate WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("DELETE FROM oilyMaterial WHERE idOilyMaterial = :idOilyMaterial;");
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
-         
     }
+    
 }
-
-
-   
