@@ -10,16 +10,13 @@ Class ControllerOilyMaterial{
 
     public static function getOilyMaterialById($idOilyMaterial){
         
-
         $oilyMaterial = OilyMaterial::getOilyMaterialById($idOilyMaterial);
         require_once "../view/readOilyMaterialById.php";
     }
 
     public static function createOilyMaterial($post){
         
-
-        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], 
-        $post['origin'], $post['processedProduct'], $post['consumableOrIngredient']);
+        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
         $oilyMaterial->createOilyMaterial();
         self::getAllOilyMaterial();
 
@@ -27,8 +24,7 @@ Class ControllerOilyMaterial{
 
     public static function updateOilyMaterial($post){
         
-        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], 
-        $post['origin'], $post['processedProduct'], $post['consumableOrIngredient']);
+        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
         $oilyMaterial->setIdOilyMaterial($post["idOilyMaterial"]);
         $oilyMaterial->updateOilyMaterial();
       

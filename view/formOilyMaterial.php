@@ -29,8 +29,8 @@
             <option value="transformed">Transformé</option>
         </select>
 
-        <label for="consumableOrIngredient">Produit consommable directement ou pour servir d'ingrédient :</label>
-        <select name="consumableOrIngredient" id="consumableOrIngredient" required>
+        <label for="ingredientOrConsumable">Produit consommable directement ou pour servir d'ingrédient :</label>
+        <select name="ingredientOrConsumable" id="ingredientOrConsumable" required>
             <option value="consumable">Consommable</option>
             <option value="ingredient">Ingrédient</option>
             <option value="both">Peut être les deux à la fois</option>

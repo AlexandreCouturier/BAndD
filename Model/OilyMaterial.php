@@ -8,14 +8,14 @@ class OilyMaterial{
     private $state;
     private $origin;
     private $processedProduct;
-    private $consumableOrIngredient;
+    private $ingredientOrConsumable;
 
-    public function __construct($productName,$state,$origin,$processedProduct,$consumableOrIngredient){
+    public function __construct($productName,$state,$origin,$processedProduct,$ingredientOrConsumable){
         $this->productName = $productName;
         $this->state = $state;
         $this->origin = $origin;
         $this->processedProduct = $processedProduct;
-        $this->consumableOrIngredient = $consumableOrIngredient;  
+        $this->ingredientOrConsumable = $ingredientOrConsumable;  
     }
 
     /**
@@ -119,21 +119,21 @@ class OilyMaterial{
     }
 
     /**
-     * Get the value of consumableOrIngredient
+     * Get the value of ingredientOrConsumable
      */ 
-    public function getConsumableOrIngredient()
+    public function getingredientOrConsumable()
     {
-        return $this->consumableOrIngredient;
+        return $this->ingredientOrConsumable;
     }
 
     /**
-     * Set the value of consumableOrIngredient
+     * Set the value of ingredientOrConsumable
      *
      * @return  self
      */ 
-    public function setConsumableOrIngredient($consumableOrIngredient)
+    public function setingredientOrConsumable($ingredientOrConsumable)
     {
-        $this->consumableOrIngredient = $consumableOrIngredient;
+        $this->ingredientOrConsumable = $ingredientOrConsumable;
 
         return $this;
     }
@@ -142,14 +142,14 @@ class OilyMaterial{
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("INSERT INTO oilyMaterial (productName,state,origin,processedProduct,consumableOrIngredient) 
-        VALUES(:productName,:state,:origin,:processedProduct,:consumableOrIngredient);");
+        $stmt = $dbh->prepare("INSERT INTO oilymaterial (productName,state,origin,processedProduct,ingredientOrConsumable) 
+        VALUES(:productName,:state,:origin,:processedProduct,:ingredientOrConsumable);");
 
         $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':state',$this->state);
         $stmt->bindParam(':origin', $this->origin);
         $stmt->bindParam(':processedProduct',$this->processedProduct);
-        $stmt->bindParam(':consumableOrIngredient',$this->consumableOrIngredient);
+        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
         
       return $stmt->execute();
 
@@ -158,7 +158,7 @@ class OilyMaterial{
     public static function getOilyMaterialById($idOilyMaterial){
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM oilyMaterial WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("SELECT * FROM oilymaterial WHERE idOilyMaterial = :idOilyMaterial;");
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
      
@@ -169,7 +169,7 @@ class OilyMaterial{
         $dao = new DAO();
         $dbh = $dao->getDbh();
      
-        $stmt = $dbh->prepare("SELECT * FROM oilyMaterial;");
+        $stmt = $dbh->prepare("SELECT * FROM oilymaterial;");
         $stmt->execute();
         return $stmt->fetchAll();
     }
@@ -178,13 +178,13 @@ class OilyMaterial{
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE oilyMaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("UPDATE oilymaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, ingredientOrConsumable=:ingredientOrConsumable WHERE idOilyMaterial = :idOilyMaterial;");
        
         $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':state',$this->state);
         $stmt->bindParam(':origin', $this->origin);
         $stmt->bindParam(':processedProduct',$this->processedProduct);
-        $stmt->bindParam(':consumableOrIngredient',$this->consumableOrIngredient);
+        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
         
       return $stmt->execute();
     }
@@ -192,7 +192,7 @@ class OilyMaterial{
     public static function deleteOilyMaterialById($idOilyMaterial){
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM oilyMaterial WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("DELETE FROM oilymaterial WHERE idOilyMaterial = :idOilyMaterial;");
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
     }
