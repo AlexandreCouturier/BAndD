@@ -1,4 +1,6 @@
 # BAndD
 creation branch
 
-myb = viens de terminé sa table Feculent.
+je viens de terminé ma table Feculent.
+
+je viens de terminé ma table viandepoissson
