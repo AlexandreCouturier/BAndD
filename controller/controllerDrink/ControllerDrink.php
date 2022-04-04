@@ -6,7 +6,7 @@ Class ControllerDrink{
 
     public static function getAllDrink(){
         $drinks = Drink::getAllDrink();
-        require "";
+        require "./view/viewDrink/formDrink.php";
     }
 
     /*public static function getOfferById($id_Offer){

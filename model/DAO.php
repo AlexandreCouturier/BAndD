@@ -1,4 +1,5 @@
 <?php
+echo "coucou";
 class DAO{
 
     private $host="localhost";
@@ -14,9 +15,12 @@ class DAO{
     {
         $this->dsn="mysql:host=$this->host;dbname=$this->dbname;port=$this->port;charset=$this->charset";
             try{
+                echo "avant la connexion a la BDD";
                 $this->dbh =new PDO($this->dsn,$this->user,$this->password);
+                echo"connecté a la bdd BAndD";
             }catch(PDOException $e){
                 $e->getMessage();
+                echo"pas connecté";
 
             }
     }

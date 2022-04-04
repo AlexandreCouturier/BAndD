@@ -1,6 +1,6 @@
 <?php 
 require_once "DAO.php";
-
+echo "dans la class drink";
 class Drink {
     private $productName;
     private $hotOrCold;
@@ -22,7 +22,7 @@ class Drink {
        $stmt->bindParam(':un', $this->productName);
         $stmt->bindParam(':deux', $this->hotOrCold);
         $stmt->bindParam(':trois', $this->sparklingOrStill);
-        
+        $stmt->execute();
         var_dump($stmt->execute());
     }
 

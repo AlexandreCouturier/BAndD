@@ -17,13 +17,13 @@ if(isset($_GET["action"])){
 */
 }elseif(isset($_POST["submit"])){
    
-
     if(isset($_POST["id"])){
         /*
         ControllerOffer::updateOffer($_POST);//enregistre le formulaire
      
 */
     }else{
+        echo "avant la fonction controllerdrink::createdrink";
         ControllerDrink::createDrink($_POST);
     }
 }
