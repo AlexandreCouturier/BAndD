@@ -178,7 +178,7 @@ class OilyMaterial{
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE oilyMaterial SET state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient, productName=:productName WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt = $dbh->prepare("UPDATE oilyMaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, consumableOrIngredient=:consumableOrIngredient WHERE idOilyMaterial = :idOilyMaterial;");
        
         $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':state',$this->state);
@@ -196,5 +196,5 @@ class OilyMaterial{
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
     }
-    
+
 }

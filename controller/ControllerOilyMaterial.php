@@ -3,9 +3,8 @@ require_once "../model/OilyMaterial.php";
 Class ControllerOilyMaterial{
 
     public static function getAllOilyMaterial(){
-        
 
-      $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
+     $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
      require_once /* "../../Front/frontOilyMaterial/readAllOilyMaterial.php";*/
     }
 
@@ -37,7 +36,7 @@ Class ControllerOilyMaterial{
     }
 
     public static function deleteOilyMaterialById($idOilyMaterial){
-        
+
         $oilyMaterial = OilyMaterial::deleteOilyMaterialById($idOilyMaterial);
     
         self::getAllOilyMaterial();
