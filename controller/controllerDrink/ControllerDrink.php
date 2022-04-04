@@ -1,12 +1,12 @@
 <?php
-
-require_once "model/Drink.php";
+echo "dans le controller drink avant la class";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/Drink.php");
 Class ControllerDrink{
 
 
     public static function getAllDrink(){
         $drinks = Drink::getAllDrink();
-        require "./view/viewDrink/formDrink.php";
+        require "./view/test.php";
     }
 
     /*public static function getOfferById($id_Offer){
@@ -15,6 +15,7 @@ Class ControllerDrink{
     }*/
 
     public static function createDrink($post){
+        echo "dans la fonction createDrink dans le controller";
         var_dump($post);
         $drink = new Drink($post['productName'], $post['hotOrCold'], $post['sparklingOrStill']);
 

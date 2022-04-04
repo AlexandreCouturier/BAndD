@@ -24,6 +24,7 @@
                 <input type="radio" name="sparklingOrStill" id="" value="plate">
             <label for="sparklingOrStill">Gazeuse</label>
                 <input type="radio" name="sparklingOrStill" id="" value="gazeuse">
+                
                 <input type="submit" value="Envoyer">
     </form>
 </body>

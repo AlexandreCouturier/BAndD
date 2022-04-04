@@ -13,6 +13,7 @@ class Drink {
     }
 
     public function createDrink(){
+        echo "dans la fonction createDrink";
         $dao = new DAO();
         $dbh = $dao->getDbh();
        

@@ -13,6 +13,7 @@ class DAO{
 
     public function __construct()
     {
+        echo "avant la connexion et le lancement de try adn catch";
         $this->dsn="mysql:host=$this->host;dbname=$this->dbname;port=$this->port;charset=$this->charset";
             try{
                 echo "avant la connexion a la BDD";

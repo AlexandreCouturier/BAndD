@@ -1,9 +1,12 @@
 <?php
-require "controller/controllerDrink/ControllerDrink.php";
+echo "Dans le routerDrink";
+require "../controller/controllerDrink/ControllerDrink.php";
 
 if(isset($_GET["action"])){
+    echo "dans get action ";
+    /*
     if($_GET["action"] == "all"){
-        ControllerOffer::getAllOffer();
+        ControllerDrink::getAllDrink();
 
     }/*elseif($_GET["action"] == "id"){
         ControllerOffer::getById($_GET["id"]);
@@ -16,7 +19,7 @@ if(isset($_GET["action"])){
     }
 */
 }elseif(isset($_POST["submit"])){
-   
+   echo "dans post submit";
     if(isset($_POST["id"])){
         /*
         ControllerOffer::updateOffer($_POST);//enregistre le formulaire
