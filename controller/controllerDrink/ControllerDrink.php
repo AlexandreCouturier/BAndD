@@ -5,8 +5,8 @@ Class ControllerDrink{
 
 
     public static function getAllDrink(){
-        $drinks = Drink::getAllDrink();
-        require "./view/test.php";
+        $allRows = Drink::getAllDrink();
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/test.php");
     }
 
     /*public static function getOfferById($id_Offer){

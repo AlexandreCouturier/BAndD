@@ -28,14 +28,18 @@ class Drink {
     }
 
     public static function getAllDrink(){
-
+        echo "avant la DAO get allDrink";
         $dao = new DAO();
-
+        echo "Apres la DAO getAll Drink";
         $dbh = $dao->getDbh();
-
+        echo "la dbh qui prend en parametre dao "; 
         $stmt = $dbh->prepare("SELECT * FROM drink;");
+        echo "requete SQL SELECT";
         $stmt->execute();
+        echo "stmt qui s'execute";
         $allRows = $stmt->fetchAll();
+        echo "allRows qui fetchAll";
+        
         return $allRows;
     }
 

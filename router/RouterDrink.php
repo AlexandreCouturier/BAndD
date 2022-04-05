@@ -4,7 +4,7 @@ require "../controller/controllerDrink/ControllerDrink.php";
 
 if(isset($_GET["action"])){
     echo "dans get action ";
-    /*
+    
     if($_GET["action"] == "all"){
         ControllerDrink::getAllDrink();
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<?php echo "dans le fichier test.php" ?>
 <body>
     <?php foreach($allRows as $row): ?>
         <?= $row["productName"]?>
