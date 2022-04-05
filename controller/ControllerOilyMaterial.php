@@ -22,6 +22,11 @@ Class ControllerOilyMaterial{
 
     }
 
+    public static function getFormUpdate($get){
+        $oilyMaterial = OilyMaterial::getFormUpdate($get);
+        require "../view/formUpdateOilyMaterial.php";
+    }
+
     public static function updateOilyMaterial($post){
         
         $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);

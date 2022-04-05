@@ -11,7 +11,7 @@
 
     <form action="../router/RouterOilyMaterial.php" method="post">
         
-            <input type="hidden" name="idOilyMaterial" value="<?=$oilyMaterial['idOilyMaterial']?>">
+            <input type="hidden" name="idOilyMaterial" required value="<?=$oilyMaterial['idOilyMaterial']?>">
 
             <label for="productName">Nom de l'aliment</label>
             <input type="text" name="productName" id="productName" required value="<?=$oilyMaterial['productName']?>">
@@ -24,7 +24,7 @@
             </select>
 
             <label for="origin">Provenance de l'aliment</label>
-            <input type="text" name="origin" id="origin" value="<?=$oilyMaterial['origin']?>">
+            <input type="text" name="origin" id="origin" required value="<?=$oilyMaterial['origin']?>">
 
             <label for="processedProduct">Produit naturel ou transformé :</label>
             <select name="processedProduct" id="processedProduct" required value="<?=$oilyMaterial['processedProduct']?>">

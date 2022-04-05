@@ -138,18 +138,18 @@ class OilyMaterial{
         return $this;
     }
 
-    public function createOilyMaterial(){
+    public static function createOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
         $stmt = $dbh->prepare("INSERT INTO oilymaterial (productName,state,origin,processedProduct,ingredientOrConsumable) 
         VALUES(:productName,:state,:origin,:processedProduct,:ingredientOrConsumable);");
 
-        $stmt->bindParam(':productName',$this->productName);
-        $stmt->bindParam(':state',$this->state);
-        $stmt->bindParam(':origin', $this->origin);
-        $stmt->bindParam(':processedProduct',$this->processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
+        $stmt->bindParam(':productName'->productName);
+        $stmt->bindParam(':state'->state);
+        $stmt->bindParam(':origin'->origin);
+        $stmt->bindParam(':processedProduct'->processedProduct);
+        $stmt->bindParam(':ingredientOrConsumable'->ingredientOrConsumable);
         
       return $stmt->execute();
 
@@ -174,7 +174,7 @@ class OilyMaterial{
         return $stmt->fetchAll();
     }
 
-    public function getFormUpdate($idOilyMaterial){
+    public static function getFormUpdate($idOilyMaterial){
         $dao = new DAO();
         $dbh = $dao->getDbh();
         $stmt = $dbh->prepare("SELECT * FROM oilymaterial WHERE idOilyMaterial = :idOilyMaterial;");
@@ -184,19 +184,19 @@ class OilyMaterial{
         return $stmt->fetch();
     }
 
-    public function updateOilyMaterial(){
+    public static function updateOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
         $stmt = $dbh->prepare("UPDATE oilymaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, ingredientOrConsumable=:ingredientOrConsumable WHERE idOilyMaterial = :idOilyMaterial;");
        
-        $stmt->bindParam(':productName',$this->productName);
-        $stmt->bindParam(':state',$this->state);
-        $stmt->bindParam(':origin', $this->origin);
-        $stmt->bindParam(':processedProduct',$this->processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
+        $stmt->bindParam(':productName'->productName);
+        $stmt->bindParam(':state'->state);
+        $stmt->bindParam(':origin'->origin);
+        $stmt->bindParam(':processedProduct'->processedProduct);
+        $stmt->bindParam(':ingredientOrConsumable'->ingredientOrConsumable);
         
-      return $stmt->execute();
+        return $stmt->execute();
     }
 
     public static function deleteOilyMaterialById($idOilyMaterial){
