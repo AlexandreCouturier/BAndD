@@ -9,10 +9,11 @@ Class ControllerDrink{
         include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/test.php");
     }
 
-    /*public static function getOfferById($id_Offer){
-        $row = Offer::getOfferByid($id_Offer);
-        require "./View/offreById.php";
-    }*/
+    public static function getDrinkById($idDrink){
+        $row = Drink::getDrinkByid($idDrink);
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewDrink/viewDrinkById.php");
+
+    }
 
     public static function createDrink($post){
         echo "dans la fonction createDrink dans le controller";
@@ -35,12 +36,12 @@ Class ControllerDrink{
         Offer::deleteOfferById($id);
         self::getAllOffer();
     }
+*/
+    public static function formDrinkUpdate($idDrink){
 
-    /*public static function formUpdateOffer($id_Offer){
-
-        $Offer = Offer::getOfferByid($id_Offer);
+        $Offer = Drink::getDrinkByid($idDrink);
         require "/viewOffer/formUpdateOffer.php";
-    }*/
+    }
 
     public static function formOffer(){
 

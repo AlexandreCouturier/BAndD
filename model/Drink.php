@@ -41,6 +41,18 @@ class Drink {
         return $allRows;
     }
 
+        public static function getDrinkById($idDrink){
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
+        
+        $stmt = $dbh->prepare("SELECT * FROM drink WHERE idDrink=:iddrink;");
+        $stmt->bindParam(":iddrink", $idDrink);
+        
+        $stmt->execute();
+
+        return $stmt->fetch();
+    }
+
     /**
      * Get the value of productName
      */ 

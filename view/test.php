@@ -14,7 +14,8 @@
         <?= $row["productName"]?> <br>
         <?= $row["hotOrCold"]?> <br>
         <?= $row["sparklingOrStill"]?> <br>
-        
+        <a href="../router/RouterDrink.php?action=id&idDrink=<?= $row['idDrink']?>">Afficher Produit</a>
+
     <?php endforeach ?>
 </body>
 </html>

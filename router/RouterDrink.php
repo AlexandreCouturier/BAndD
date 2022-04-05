@@ -9,12 +9,12 @@ if(isset($_GET["action"])){
         ControllerDrink::getAllDrink();
 
     }elseif($_GET["action"] == "id"){
-        ControllerDrink::getById($_GET["id"]);
+        ControllerDrink::getDrinkById($_GET["idDrink"]);
 
-    }/*elseif($_GET["action"] == "update"){
-        ControllerOffer::formUpdate($_GET["id"]);//envoi vers le formulaire
+    }elseif($_GET["action"] == "update"){
+        ControllerDrink::formDrinkUpdate($_GET["idDrink"]);//envoi vers le formulaire
 
-    }elseif($_GET["action"] == "delete"){
+    }/*elseif($_GET["action"] == "delete"){
         ControllerOffer::deleteOfferById($_GET["id"]);
     }
 */
