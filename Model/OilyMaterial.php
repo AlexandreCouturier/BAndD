@@ -138,18 +138,18 @@ class OilyMaterial{
         return $this;
     }
 
-    public static function createOilyMaterial(){
+    public function createOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
         $stmt = $dbh->prepare("INSERT INTO oilymaterial (productName,state,origin,processedProduct,ingredientOrConsumable) 
         VALUES(:productName,:state,:origin,:processedProduct,:ingredientOrConsumable);");
 
-        $stmt->bindParam(':productName'->productName);
-        $stmt->bindParam(':state'->state);
-        $stmt->bindParam(':origin'->origin);
-        $stmt->bindParam(':processedProduct'->processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable'->ingredientOrConsumable);
+        $stmt->bindParam(':productName',$this->productName);
+        $stmt->bindParam(':state',$this->state);
+        $stmt->bindParam(':origin', $this->origin);
+        $stmt->bindParam(':processedProduct',$this->processedProduct);
+        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
         
       return $stmt->execute();
 
@@ -190,12 +190,12 @@ class OilyMaterial{
 
         $stmt = $dbh->prepare("UPDATE oilymaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, ingredientOrConsumable=:ingredientOrConsumable WHERE idOilyMaterial = :idOilyMaterial;");
        
-        $stmt->bindParam(':productName'->productName);
-        $stmt->bindParam(':state'->state);
-        $stmt->bindParam(':origin'->origin);
-        $stmt->bindParam(':processedProduct'->processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable'->ingredientOrConsumable);
-        
+        $stmt->bindParam(':productName',$productName);
+        $stmt->bindParam(':state',$state);
+        $stmt->bindParam(':origin',$origin);
+        $stmt->bindParam(':processedProduct',$processedProduct);
+        $stmt->bindParam(':ingredientOrConsumable',$ingredientOrConsumable);
+       
         return $stmt->execute();
     }
 

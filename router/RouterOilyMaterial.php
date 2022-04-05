@@ -20,7 +20,7 @@ if(isset($_GET["action"])){
 
         if(isset($_POST["idOilyMaterial"])){
 
-        ControllerOilyMaterial::updateOilyMaterial($_POST);//enregistre le formulaire
+        ControllerOilyMaterial::updateOilyMaterial($_POST["idOilyMaterial"]);//enregistre le formulaire
      
         }else{
 
