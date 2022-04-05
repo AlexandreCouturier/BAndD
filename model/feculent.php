@@ -1,8 +1,8 @@
 <?php
 
-require_once "./dao.php";
+require_once "./Dao.php";
 
-class feculent
+class Feculent
 {
 
     private $idFeculent;
@@ -23,13 +23,13 @@ class feculent
         
     }
 
-    /*public static function getAllfeculent()
+    /*public static function getAllFeculent()
     {
 
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
 
-        $stmt = $dbh->prepare("SELECT * FROM feculent;");
+        $stmt = $dbh->prepare("SELECT * FROM Feculent;");
         $rows = $stmt->fetchAll();
 
         return $rows;
@@ -37,19 +37,19 @@ class feculent
         
     }*/
     
-    public static function getAllfeculent(){
+    public static function getAllFeculent(){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM feculent;");
+        $stmt = $dbh->prepare("SELECT * FROM Feculent;");
         $stmt->execute();
         
         return $stmt->fetchAll();
     }
 
-    public function createfeculent()
+    public function createFeculent()
     {
 
-        $request = "INSERT INTO feculent (productName, originPlant, transform, cooked,) 
+        $request = "INSERT INTO Feculent (productName, originPlant, transform, cooked,) 
             VALUES (:productName, :originPlant, :transform, :cooked)";
 
         $Dao = new Dao();
@@ -66,10 +66,10 @@ class feculent
         $stmt->execute();
     }
 
-    public static function getfeculentById($idFeculent)
+    public static function getFeculentById($idFeculent)
     {
 
-        $request = "SELECT * FROM feculent WHERE Idfeculent = :idfeculent";
+        $request = "SELECT * FROM Feculent WHERE IdFeculent = :idFeculent";
 
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
@@ -82,27 +82,13 @@ class feculent
         return $row;
     }
 
-    /*public static function readByfeculentF($id_Job){
+   
 
-        $request = "SELECT * FROM feculent WHERE id_Job = :id_Job";
-
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
-
-        $stmt = $dbh->prepare($request);
-        $stmt->bindParam(":id_Job", $id_Job);
-        $stmt->execute();
-        $rows = $stmt->fetchAll();
-
-        return $rows;
-
-    }*/
-
-    public function updatefeculent(){
+    public function updateFeculent(){
         $Dao = new Dao();
         $dbh =$Dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE feculent SET (productName, originPlant, transform, cooked,) 
+        $stmt = $dbh->prepare("UPDATE Feculent SET (productName, originPlant, transform, cooked,) 
         VALUES (:productName, :originPlant, :transform, :cooked,");
        
 
@@ -117,10 +103,10 @@ class feculent
 
 
 
-    public static function deletefeculentById($idFeculent){
+    public static function deleteFeculentById($idFeculent){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM feculent WHERE idFeculent = :idFeculent;");
+        $stmt = $dbh->prepare("DELETE FROM Feculent WHERE idFeculent = :idFeculent;");
          $stmt->bindParam("idFeculent",$idFeculent);
          $stmt->execute();
  

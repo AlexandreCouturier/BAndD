@@ -15,8 +15,8 @@
         <li><?=$feculent["typeOfMeat"]?></li>
         <li><?=$feculent["animal"]?></li>
         <li><?=$feculent["disappearance"]?></li>
-        <a href="../../router/routerFeculent.php?action=update&id=<?=$feculent["idfeculent"]?>">Modifier</a>
-        <a href="../../router/routerFeculent.php?action=delete&id=<?=$feculent["idfeculent"]?>">Supprimer</a>
+        <a href="../../router/routerFeculent.php?action=update&id=<?=$feculent["idFeculent"]?>">Modifier</a>
+        <a href="../../router/routerFeculent.php?action=delete&id=<?=$feculent["idFeculent"]?>">Supprimer</a>
     </ul>
 </body>
 </html>

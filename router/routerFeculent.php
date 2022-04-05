@@ -1,5 +1,5 @@
 <?php
-require "../Controller/controllerFeculent.php";
+require "../Controller/ControllerFeculent.php";
 
 if(isset($_GET["action"])){
 

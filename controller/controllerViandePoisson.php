@@ -1,5 +1,5 @@
 <?php
-require_once "./model/viandePoisson.php";
+require_once "./model/ViandePoisson.php";
 class ControllerViandePoisson{
 
     public static function getAll(){
@@ -36,7 +36,6 @@ class ControllerViandePoisson{
 
     public static function deleteById($id){
        
-
         $ViandePoisson = ViandePoisson::deleteViandePoissonById($id);
     
         self::getAll();
@@ -44,7 +43,7 @@ class ControllerViandePoisson{
 
     public static function formUpdate($id){
         $ViandePoisson = ViandePoisson::getViandePoissonByid($id);
-        require "./View/View_ViandePoisson/formModif.php";
+        require "./view/viewViandePoisson/formModif.php";
     }
     
 }

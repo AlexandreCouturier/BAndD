@@ -1,6 +1,6 @@
 <?php
 
-require_once "./dao.php";
+require_once "./Dao.php";
 
 class ViandePoisson
 {

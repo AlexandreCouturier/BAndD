@@ -1,5 +1,5 @@
 <?php
-require_once "./model/feculent.php";
+require_once "./model/Feculent.php";
 class ControllerFeculent{
 
     public static function getAll(){
@@ -12,7 +12,7 @@ class ControllerFeculent{
     public static function getById($id){
         
         $Feculent = Feculent::getFeculentByid($id);
-        require "../view/viewFeculent/readByIdfeculent.php";
+        require "../view/viewFeculent/readByIdFeculent.php";
     }
 
     public static function create($post){
@@ -36,7 +36,6 @@ class ControllerFeculent{
 
     public static function deleteById($id){
        
-
         $Feculent = Feculent::deleteFeculentById($id);
     
         self::getAll();
@@ -44,7 +43,7 @@ class ControllerFeculent{
 
     public static function formUpdate($id){
         $Feculent = Feculent::getFeculentByid($id);
-        require "./View/View_Feculent/formModif.php";
+        require "../view/viewFeculent/formModif.php";
     }
     
 }
