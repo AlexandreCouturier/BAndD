@@ -11,16 +11,14 @@ class ControllerFeculent{
 
     public static function getById($id){
         
-
         $Feculent = Feculent::getFeculentByid($id);
         require "../view/viewFeculent/readByIdfeculent.php";
     }
 
     public static function create($post){
         
-
-        $Feculent = new Feculent($post['name'], $post['firstname'], 
-        $post['email'], $post['phone'], $post['motivation'], $post['id_Job'] );
+        $Feculent = new Feculent($post['productName'], $post['originplant'], 
+        $post['transform'], $post['cooked']);
         $Feculent->createFeculent();
         self::getAll();
 
@@ -28,9 +26,9 @@ class ControllerFeculent{
 
     public static function update($post){
         
-        $Feculent = new Feculent($post['name'], $post['firstname'], 
-        $post['email'], $post['phone'], $post['motivation'], $post['id_Job'] );
-        $Feculent->setId_Feculent($post["id"]);
+        $Feculent = new Feculent($post['productName'], $post['originplant'], 
+        $post['transform'], $post['cooked']);
+        $Feculent->setidFeculent($post["id"]);
         $Feculent->updateFeculent();
       
         self::getAll();
