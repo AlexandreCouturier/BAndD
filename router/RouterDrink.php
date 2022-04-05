@@ -8,10 +8,10 @@ if(isset($_GET["action"])){
     if($_GET["action"] == "all"){
         ControllerDrink::getAllDrink();
 
-    }/*elseif($_GET["action"] == "id"){
-        ControllerOffer::getById($_GET["id"]);
+    }elseif($_GET["action"] == "id"){
+        ControllerDrink::getById($_GET["id"]);
 
-    }elseif($_GET["action"] == "update"){
+    }/*elseif($_GET["action"] == "update"){
         ControllerOffer::formUpdate($_GET["id"]);//envoi vers le formulaire
 
     }elseif($_GET["action"] == "delete"){

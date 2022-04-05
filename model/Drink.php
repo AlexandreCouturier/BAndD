@@ -19,12 +19,10 @@ class Drink {
        
        $stmt = $dbh->prepare("INSERT INTO drink (productName, hotOrCold, sparklingOrStill) VALUES (:un, :deux, :trois);");
        
-       var_dump($this);
        $stmt->bindParam(':un', $this->productName);
         $stmt->bindParam(':deux', $this->hotOrCold);
         $stmt->bindParam(':trois', $this->sparklingOrStill);
         $stmt->execute();
-        var_dump($stmt->execute());
     }
 
     public static function getAllDrink(){

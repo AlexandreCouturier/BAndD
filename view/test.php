@@ -8,10 +8,13 @@
 </head>
 <?php echo "dans le fichier test.php" ?>
 <body>
+<a href="../view/viewDrink/formDrink.php">Formulaire Drinks</a>
     <?php foreach($allRows as $row): ?>
-        <?= $row["productName"]?>
-        <?= $row["hotOrCold"]?>
-        <?= $row["sparklingOrStill"]?>
+    <p>Votre boisson est : </p>
+        <?= $row["productName"]?> <br>
+        <?= $row["hotOrCold"]?> <br>
+        <?= $row["sparklingOrStill"]?> <br>
+        
     <?php endforeach ?>
 </body>
 </html>
