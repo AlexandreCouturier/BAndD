@@ -174,6 +174,16 @@ class OilyMaterial{
         return $stmt->fetchAll();
     }
 
+    public function getFormUpdate($idOilyMaterial){
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
+        $stmt = $dbh->prepare("SELECT * FROM oilymaterial WHERE idOilyMaterial = :idOilyMaterial;");
+        $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
+        $stmt->execute();
+     
+        return $stmt->fetch();
+    }
+
     public function updateOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();

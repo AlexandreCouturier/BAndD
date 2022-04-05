@@ -9,8 +9,8 @@ if(isset($_GET["action"])){
         }elseif($_GET["action"] == "idOilyMaterial"){
             ControllerOilyMaterial::getOilyMaterialById($_GET["idOilyMaterial"]);
 
-        }elseif($_GET["action"] == "update"){
-            ControllerOilyMaterial::updateOilyMaterial($_GET["idOilyMaterial"]);//envoi vers le formulaire
+        }elseif($_GET["action"] == "updateOilyMaterial"){
+            ControllerOilyMaterial::getFormUpdate($_GET["idOilyMaterial"]);//envoi vers le formulaire
 
         }elseif($_GET["action"] == "delete"){
             ControllerOilyMaterial::deleteOilyMaterial($_GET["idOilyMaterial"]);
@@ -20,7 +20,7 @@ if(isset($_GET["action"])){
 
         if(isset($_POST["idOilyMaterial"])){
 
-        ControllerOilyMaterial::updateOilyMaterial($_POST);//enregistre le formulaire
+        ControllerOilyMaterial::updateOilyMaterial($_POST["idOilyMaterial"]);//enregistre le formulaire
      
         }else{
 

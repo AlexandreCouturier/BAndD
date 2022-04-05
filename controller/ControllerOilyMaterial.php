@@ -25,7 +25,7 @@ Class ControllerOilyMaterial{
     public static function updateOilyMaterial($post){
         
         $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
-        $oilyMaterial->setIdOilyMaterial($post["idOilyMaterial"]);
+        $oilyMaterial->setIdOilyMaterial($post['idOilyMaterial']);
         $oilyMaterial->updateOilyMaterial();
       
         self::getAllOilyMaterial();

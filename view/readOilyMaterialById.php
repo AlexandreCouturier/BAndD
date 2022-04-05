@@ -11,18 +11,16 @@
 </head>
 <body>
 
-        <ul>
-            <li><?=$oilyMaterial["productName"]?></li>
-            <li><?=$oilyMaterial["state"]?></li>
-            <li><?=$oilyMaterial["origin"]?></li>
-            <li><?=$oilyMaterial["processedProduct"]?></li>
-            <li><?=$oilyMaterial["ingredientOrConsumable"]?></li>
+    <ul>
+        <li><?=$oilyMaterial["productName"]?></li>
+        <li><?=$oilyMaterial["state"]?></li>
+        <li><?=$oilyMaterial["origin"]?></li>
+        <li><?=$oilyMaterial["processedProduct"]?></li>
+        <li><?=$oilyMaterial["ingredientOrConsumable"]?></li>
+    </ul>
 
-            <a href="../router/RouterOilyMaterial.php?action=idOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Afficher cet aliment</a>
-        </ul>
-
-    <a href="../Router/RouterOilyMaterial.php?action=updateOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Modifier</a>
-    <a href="../Router/RouterOilyMaterial.php?action=deleteOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Supprimer</a>
+    <a href="../router/RouterOilyMaterial.php?action=updateOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Modifier</a>
+    <a href="../router/RouterOilyMaterial.php?action=deleteOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Supprimer</a>
 
   
 </body>
