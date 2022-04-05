@@ -36,7 +36,7 @@
             <option value="both">Peut être les deux à la fois</option>
         </select>
 
-        <input type="submit" value="Envoyer votre candidature" name="submit">     
+        <input type="submit" value="Publier votre aliment" name="submit">     
 
     </form>
     

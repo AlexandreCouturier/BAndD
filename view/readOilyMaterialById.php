@@ -21,7 +21,7 @@
             <a href="../router/RouterOilyMaterial.php?action=idOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Afficher cet aliment</a>
         </ul>
 
-    <a href="../Router/RouterRecruiterOilyMaterial.php?action=updateOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Modifier</a>
+    <a href="../Router/RouterOilyMaterial.php?action=updateOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Modifier</a>
     <a href="../Router/RouterOilyMaterial.php?action=deleteOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Supprimer</a>
 
   

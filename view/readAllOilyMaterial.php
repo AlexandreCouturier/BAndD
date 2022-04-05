@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<a href="./formOilyMaterial.php">creer une adresse</a>
+<a href="./formOilyMaterial.php">Ajouter un aliment</a>
 
     <?php foreach($allOilyMaterial as $oilyMaterial):?>
 
