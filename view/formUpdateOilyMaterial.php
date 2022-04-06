@@ -25,10 +25,10 @@
             </select>
 
             <label for="origin">Provenance de l'aliment</label>
-            <input type="text" name="origin" id="origin" value="><?=$oilyMaterial["origin"]?>" >
+            <input type="text" name="origin" id="origin" value="<?=$oilyMaterial["origin"]?>" >
 
             <label for="processedProduct">Produit naturel ou transformé :</label>
-            <select name="processedProduct" id="processedProduct"  >
+            <select name="processedProduct" id="processedProduct">
                 <option value="<?=$oilyMaterial['processedProduct']?>"><?=$oilyMaterial['processedProduct']?></option>
                 <option value="natural">Naturel</option>
                 <option value="transformed">Transformé</option>

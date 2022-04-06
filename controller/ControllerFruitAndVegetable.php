@@ -26,8 +26,9 @@ Class ControllerFruitAndVegetable{
 
     }
 
-    public static function getFormUpdate($get){
-        $fruitAndVegetable = FruitAndVegetable::getFormUpdate($get);
+    public static function getFormUpdate($idFruitAndVegetable){
+        $fruitAndVegetable = FruitAndVegetable::getFormUpdate($idFruitAndVegetable);
+        var_dump($fruitAndVegetable);
         require "../view/formUpdateFruitAndVegetable.php";
     }
 
