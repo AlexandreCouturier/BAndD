@@ -18,7 +18,7 @@
             <label for="hotOrCold">Froide</label>
                 <input type="radio" name="hotOrCold" id="" value="froide">
             <label for="hotOrCold">Les deux</label>
-                <input type="radio" name="hotOrCold" id="" value="froide" value="deux">
+                <input type="radio" name="hotOrCold" id="" value="deux">
         <p>La boisson est tel plate ou gazeuse : </p>
             <label for="sparklingOrStill">Plate</label>
                 <input type="radio" name="sparklingOrStill" id="" value="plate">

@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="../../router/RouterDrink.php" method="post">
-        <input type="hidden" name="" value="<?= $row['idDrink']?>">
+    <form action="../../../BAndD/router/RouterDrink.php" method="post">
+        <input type="hidden" name="idDrink" value="<?= $row['idDrink']?>">
         <label for="productName">Quelle est le nom de la boisson :</label>
             <input type="text" name="productName" id="" value="<?= $row['productName']?>">
         <p>La boisson est tel chaude ou froide :</p>
@@ -19,7 +19,7 @@
             <label for="hotOrCold">Froide</label>
                 <input type="radio" name="hotOrCold" id="" value="froide">
             <label for="hotOrCold">Les deux</label>
-                <input type="radio" name="hotOrCold" id="" value="froide" value="deux">
+                <input type="radio" name="hotOrCold" id="" value="deux">
         <p>La boisson est tel plate ou gazeuse : </p>
             <label for="sparklingOrStill">Plate</label>
                 <input type="radio" name="sparklingOrStill" id="" value="plate">
