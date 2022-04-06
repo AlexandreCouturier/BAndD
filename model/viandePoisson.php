@@ -243,3 +243,5 @@ class ViandePoisson
         return $this;
     }
 }
+
+?>

@@ -3,7 +3,7 @@ echo "contr";
 include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/feculent.php");
 echo "dans la class controllerdeculent avant la class";
 class ControllerFeculent{
-
+    
     public static function getAll(){
         
 
@@ -16,7 +16,7 @@ class ControllerFeculent{
         $Feculent = Feculent::getFeculentByid($id);
         require "../view/viewFeculent/readByIdFeculent.php";
     }
-
+    
     public static function create($post){
         
         $Feculent = new Feculent($post['productName'], $post['originplant'], 
@@ -25,7 +25,7 @@ class ControllerFeculent{
         self::getAll();
 
     }
-
+  
     public static function update($post){
         
         $Feculent = new Feculent($post['productName'], $post['originplant'], 
@@ -47,5 +47,7 @@ class ControllerFeculent{
         $Feculent = Feculent::getFeculentByid($id);
         require "../view/viewFeculent/formModif.php";
     }
-    
+   
 }
+echo "etalalalla";
+?>

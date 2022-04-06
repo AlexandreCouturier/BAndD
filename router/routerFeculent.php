@@ -2,6 +2,7 @@
 echo "router";
 include($_SERVER['DOCUMENT_ROOT']."/BAndD/controller/controllerFeculent.php");
 echo "dans le routerfeculent avant le if "; 
+
 if(isset($_GET["action"])){
 echo "ok ok ";
     if($_GET["action"] == "all"){
@@ -17,7 +18,7 @@ echo "ok ok ";
     }elseif($_GET["action"] == "delete"){
         ControllerFeculent::deleteById($_GET["id"]);
     }
-
+echo "ok ok oko";
 }elseif(isset($_POST["submit"])){
    
 
@@ -30,6 +31,7 @@ echo "ok ok ";
 
         ControllerFeculent::create($_POST);
     }
+    echo "voialalala ";
 }
-
+echo "eeeeeeeeee";
 ?>
