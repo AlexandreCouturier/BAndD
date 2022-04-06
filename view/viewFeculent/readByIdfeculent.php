@@ -8,15 +8,15 @@
     <title>feculent</title>
 </head>
 <body>
-<a href="../../router/routerFeculent.php">les feculentes</a>
+<a href="../../../BAndD/router/routerFeculent.php">les feculentes</a>
 
     <ul>
         <li><?=$feculent["productName"]?></li>
         <li><?=$feculent["typeOfMeat"]?></li>
         <li><?=$feculent["animal"]?></li>
         <li><?=$feculent["disappearance"]?></li>
-        <a href="../../router/routerFeculent.php?action=update&id=<?=$feculent["idFeculent"]?>">Modifier</a>
-        <a href="../../router/routerFeculent.php?action=delete&id=<?=$feculent["idFeculent"]?>">Supprimer</a>
+        <a href="../../../BAndD/router/routerFeculent.php?action=update&id=<?=$feculent["idFeculent"]?>">Modifier</a>
+        <a href="../../../BAndD/router/routerFeculent.php?action=delete&id=<?=$feculent["idFeculent"]?>">Supprimer</a>
     </ul>
 </body>
 </html>

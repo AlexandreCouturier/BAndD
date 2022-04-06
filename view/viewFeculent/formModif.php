@@ -9,10 +9,10 @@
 
 </head>
 <body>
-<a href="../../router/routerFeculent.php?action=all">les Feculentes</a>
+<a href="../../../BAndD/router/routerFeculent.php?action=all">les Feculentes</a>
 
 
-    <form action="../../router/routerFeculent.php" method="post">
+    <form action="../../../BAndD/router/routerFeculent.php" method="post">
 
         <input type="hidden" name="id" value="<?=$Feculent['idFeculent']?>">
 

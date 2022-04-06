@@ -7,10 +7,10 @@
     <title>Saisir produit</title>
 </head>
 <body>
-<a href="../../router/routerFeculent.php?action=all">les feculent</a>
+<a href="../../../BAndD/router/routerFeculent.php?action=all">les feculent</a>
 
 
-    <form action="../../router/routerFeculent.php" method="post">
+    <form action="../../../BAndD/router/routerFeculent.php" method="post">
 
         <label for="productName">productName</label>
         <input type="select" name="productName" id="productName">

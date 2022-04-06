@@ -8,13 +8,14 @@ class ControllerFeculent{
         
 
       $allFeculent = Feculent::getAllFeculent();
-     require "../view/viewFeculent/readAllFeculent.php";
+
+    include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewFeculent/readAllFeculent.php");
     }
 
     public static function getById($id){
         
         $Feculent = Feculent::getFeculentByid($id);
-        require "../view/viewFeculent/readByIdFeculent.php";
+    include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewFeculent/readByIdfeculent.php");
     }
     
     public static function create($post){
@@ -45,7 +46,8 @@ class ControllerFeculent{
 
     public static function formUpdate($id){
         $Feculent = Feculent::getFeculentByid($id);
-        require "../view/viewFeculent/formModif.php";
+        
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewFeculent/formModif.php");
     }
    
 }

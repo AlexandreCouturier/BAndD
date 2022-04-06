@@ -9,10 +9,10 @@
 
 </head>
 <body>
-<a href="../../router/routerViandePoisson.php?action=all">les ViandePoissones</a>
+<a href="../../../BAndD/router/routerViandePoisson.php?action=all">les ViandePoissones</a>
 
 
-    <form action="../../router/routerViandePoisson.php" method="post">
+    <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
 
         <input type="hidden" name="id" value="<?=$ViandePoisson['idViandePoisson']?>">
 

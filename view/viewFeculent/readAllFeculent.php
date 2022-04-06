@@ -13,10 +13,10 @@ echo "fff";
 <body>
 
 
-<a href="formCreateFeculent.php">ajouter un feculent</a>
+<a href="./formCreateFeculent.php">ajouter un feculent</a>
 
 <?php foreach($allFeculent as $feculent): ?>
-        <p><a href="../../router/routerFeculent.php?action=id&id=<?=$feculent["idFeculent"] ?>">Afficher les feculent</a></p>
+        <p><a href="../../../BAndD/router/routerFeculent.php?action=id&id=<?=$feculent["idFeculent"] ?>">Afficher les feculent</a></p>
         <ul>
             <li><?= $feculent["productName"]?></li>
             <li><?= $feculent["originPlant"]?></li>

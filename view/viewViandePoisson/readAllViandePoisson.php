@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<a href="formCreate.php">ajouter une viande ou poisson</a>
+<a href="./formCreate.php">ajouter une viande ou poisson</a>
 
 <?php foreach($allViandePoisson as $ViandePoisson): ?>
-        <p><a href="../../router/routerViandePoisson.php?action=id&id=<?=$ViandePoisson["idViandePoisson"] ?>">Afficher les ViandePoisson</a></p>
+        <p><a href="../../../BAndD/router/routerViandePoisson.php?action=id&id="<?=$ViandePoisson['idViandePoisson']?>">Afficher les ViandePoisson</a></p>
         <ul>
             <li><?= $ViandePoisson["productName"]?></li>
             <li><?= $ViandePoisson["typeOfMeat"]?></li>

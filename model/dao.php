@@ -15,7 +15,7 @@ class Dao{
     {
         echo "avant le this dsn et la phrase de connexion";
         $this->dsn="mysql:host=$this->host:$this->port;dbname=$this->dbname;charset=$this->charset";
-        echo "apres le this dsn et la phrase de connexion";
+        echo "apres l";
             try{
                 echo "dans le try avant le dbh";
                 $this->dbh =  new PDO($this->dsn,$this->user,$this->password);

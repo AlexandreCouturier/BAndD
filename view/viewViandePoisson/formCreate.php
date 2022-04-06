@@ -7,10 +7,10 @@
     <title>Saisir produit</title>
 </head>
 <body>
-<a href="../../router/routerViandePoisson.php?action=all">les viande et poisson</a>
+<a href="../../../BAndD/router/routerViandePoisson.php?action=all">les viande et poisson</a>
 
 
-    <form action="../../router/routerViandePoisson.php" method="post">
+    <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
 
         <label for="productName">productName</label>
         <input type="select" name="productName" id="productName">
