@@ -39,8 +39,9 @@ Class ControllerDrink{
 */
     public static function formDrinkUpdate($get){
 
-        $drink = Drink::getDrinkByid($get);
+        $row = Drink::getDrinkByid($get);
         include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewDrink/formDrinkUpdate.php");
+
     }
 
     public static function formOffer(){

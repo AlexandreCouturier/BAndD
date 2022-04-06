@@ -10,8 +10,9 @@
 </head>
 <body>
     <form action="../../router/RouterDrink.php" method="post">
+        <input type="hidden" name="" value="<?= $row['idDrink']?>">
         <label for="productName">Quelle est le nom de la boisson :</label>
-            <input type="text" name="productName" id="">
+            <input type="text" name="productName" id="" value="<?= $row['productName']?>">
         <p>La boisson est tel chaude ou froide :</p>
             <label for="hotOrCold">Chaude</label>
                 <input type="radio" name="hotOrCold" id="" value="chaude">

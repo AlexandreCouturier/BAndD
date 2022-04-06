@@ -1,6 +1,7 @@
 <?php 
-require_once "DAO.php";
 echo "dans la class drink";
+require_once "DAO.php";
+
 class Drink {
     private $productName;
     private $hotOrCold;
