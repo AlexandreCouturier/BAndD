@@ -12,7 +12,7 @@ if(isset($_GET["action"])){
         }elseif($_GET["action"] == "updateOilyMaterial"){
             ControllerOilyMaterial::getFormUpdate($_GET["idOilyMaterial"]);//envoi vers le formulaire
 
-        }elseif($_GET["action"] == "delete"){
+        }elseif($_GET["action"] == "deleteOilyMaterial"){
             ControllerOilyMaterial::deleteOilyMaterial($_GET["idOilyMaterial"]);
     }
 

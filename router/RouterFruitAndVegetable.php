@@ -12,8 +12,8 @@ if(isset($_GET["action"])){
         }elseif($_GET["action"] == "updateFruitAndVegetable"){
             ControllerFruitAndVegetable::getFormUpdate($_GET["idFruitAndVegetable"]);//envoi vers le formulaire
 
-        }elseif($_GET["action"] == "delete"){
-            ControllerFruitAndVegetable::deleteFruitAndVegetable($_GET["idFruitAndVegetable"]);
+        }elseif($_GET["action"] == "deleteFruitAndVegetableById"){
+            ControllerFruitAndVegetable::deleteFruitAndVegetableById($_GET["idFruitAndVegetable"]);
     }
 
     }elseif(isset($_POST["submit"])){
@@ -26,6 +26,7 @@ if(isset($_GET["action"])){
 
         ControllerFruitAndVegetable::createFruitAndVegetable($_POST);
     }
+
 }
 
 ?>

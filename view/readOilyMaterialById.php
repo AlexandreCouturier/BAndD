@@ -16,7 +16,6 @@
         <li><?=$oilyMaterial["state"]?></li>
         <li><?=$oilyMaterial["origin"]?></li>
         <li><?=$oilyMaterial["processedProduct"]?></li>
-
     </ul>
 
     <a href="../router/RouterOilyMaterial.php?action=updateOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Modifier</a>

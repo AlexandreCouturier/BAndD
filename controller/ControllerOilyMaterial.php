@@ -1,5 +1,7 @@
 <?php
+
 require_once "../model/OilyMaterial.php";
+
 Class ControllerOilyMaterial{
 
     public static function getAllOilyMaterial(){
@@ -12,9 +14,10 @@ Class ControllerOilyMaterial{
         
         $oilyMaterial = OilyMaterial::getOilyMaterialById($idOilyMaterial);
         require_once "../view/readOilyMaterialById.php";
+        
     }
 
-    public static function createOilyMaterial($post){
+    public function createOilyMaterial($post){
         
         $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
         $oilyMaterial->createOilyMaterial();

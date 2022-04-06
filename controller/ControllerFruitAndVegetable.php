@@ -1,4 +1,5 @@
 <?php
+
 require_once "../model/FruitAndVegetable.php";
 Class ControllerFruitAndVegetable{
 
@@ -6,41 +7,46 @@ Class ControllerFruitAndVegetable{
 
      $allFruitAndVegetable = FruitAndVegetable::getAllFruitAndVegetable();
      require_once "../view/readAllFruitAndVegetable.php";
+
     }
 
     public static function getFruitAndVegetableById($idFruitAndVegetable){
         
-        $oilyMaterial = FruitAndVegetable::getFruitAndVegetableById($idFruitAndVegetable);
+        $fruitAndVegetable = FruitAndVegetable::getFruitAndVegetableById($idFruitAndVegetable);
         require_once "../view/readFruitAndVegetableById.php";
+
     }
 
     public static function createFruitAndVegetable($post){
         
-        $oilyMaterial = new FruitAndVegetable($post['productName'], $post['color'], $post['taste'], $post['coldOrHot']);
-        $oilyMaterial->createFruitAndVegetable();
+        $fruitAndVegetable = new FruitAndVegetable($post['productName'], $post['color'], $post['taste'], $post['coldOrHot']);
+        $fruitAndVegetable->createFruitAndVegetable();
+
         self::getAllFruitAndVegetable();
 
     }
 
     public static function getFormUpdate($get){
-        $oilyMaterial = FruitAndVegetable::getFormUpdate($get);
+        $fruitAndVegetable = FruitAndVegetable::getFormUpdate($get);
         require "../view/formUpdateFruitAndVegetable.php";
     }
 
     public static function updateFruitAndVegetable($post){
         
-        $oilyMaterial = new FruitAndVegetable($post['productName'], $post['color'], $post['taste'], $post['coldOrHot']);
-        $oilyMaterial->setIdFruitAndVegetable($post['idFruitAndVegetable']);
-        $oilyMaterial->updateFruitAndVegetable();
+        FruitAndVegetable::updateFruitAndVegetable($post['idFruitAndVegetable'],$post['productName'], $post['color'], $post['taste'], $post['coldOrHot']);
+        $fruitAndVegetable->setIdFruitAndVegetable($post['idFruitAndVegetable']);
+        $fruitAndVegetable->updateFruitAndVegetable();
       
         self::getAllFruitAndVegetable();
     }
 
     public static function deleteFruitAndVegetableById($idFruitAndVegetable){
 
-        $oilyMaterial = FruitAndVegetable::deleteFruitAndVegetableById($idFruitAndVegetable);
+        $fruitAndVegetable = FruitAndVegetable::deleteFruitAndVegetableById($idFruitAndVegetable);
     
         self::getAllFruitAndVegetable();
+
+        echo "sdosqjdkqsjdklsq5555";
     }
     
 }

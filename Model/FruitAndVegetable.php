@@ -151,7 +151,7 @@ class FruitAndVegetable{
         return $stmt->fetchAll();
     }
 
-    public static function getFormUpdate($idFruitAndVegetable){
+    public static function getFormUpdate($idFruitAndVegetable,$productName,$color,$taste,$coldOrHot){
         $dao = new DAO();
         $dbh = $dao->getDbh();
         $stmt = $dbh->prepare("SELECT * FROM fruitandvegetable WHERE idFruitAndVegetable = :idFruitAndVegetable;");
@@ -161,12 +161,13 @@ class FruitAndVegetable{
         return $stmt->fetch();
     }
 
-    public static function updateFruitAndVegetable(){
+    public static function updateFruitAndVegetable($idFruitAndVegetable,$productName,$color,$taste,$coldOrHot){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE fruitandvegetable SET productName=:productName, color=:color, taste=:taste, coldOrHot=:coldOrHot= WHERE idFruitAndVegetable = :idFruitAndVegetable;");
-       
+        $stmt = $dbh->prepare("UPDATE fruitandvegetable SET productName=:productName, color=:color, taste=:taste, coldOrHot=:coldOrHot WHERE idFruitAndVegetable = :idFruitAndVegetable;");
+    
+        $stmt->bindParam(':idFruitAndVegetable',$idFruitAndVegetable);
         $stmt->bindParam(':productName',$productName);
         $stmt->bindParam(':color',$color);
         $stmt->bindParam(':taste',$taste);
