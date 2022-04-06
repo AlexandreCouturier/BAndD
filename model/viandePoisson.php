@@ -1,9 +1,10 @@
 <?php
-
-require_once "./Dao.php";
-
+echo "viande";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/dao.php");
+echo "apres include";
 class ViandePoisson
 {
+    
 
     private $idViandePoisson;
     private $productName;
@@ -13,29 +14,16 @@ class ViandePoisson
     
     
    
-    public function __construct($productName, $typeOfMeat, $animal, $disappearance,)
+    public function __construct($productName, $typeOfMeat, $animal, $disappearance)
     {
         $this->productName = $productName;
         $this->typeOfMeat = $typeOfMeat;
         $this->animal = $animal;
         $this->disappearance = $disappearance;
-        
-        
+
     }
 
-    /*public static function getAllViandePoisson()
-    {
-
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
-
-        $stmt = $dbh->prepare("SELECT * FROM ViandePoisson;");
-        $rows = $stmt->fetchAll();
-
-        return $rows;
-
-        
-    }*/
+    
     
     public static function getAllViandePoisson(){
         $Dao = new Dao();
@@ -82,28 +70,14 @@ class ViandePoisson
         return $row;
     }
 
-    /*public static function readByViandePoissonF($id_Job){
-
-        $request = "SELECT * FROM ViandePoisson WHERE id_Job = :id_Job";
-
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
-
-        $stmt = $dbh->prepare($request);
-        $stmt->bindParam(":id_Job", $id_Job);
-        $stmt->execute();
-        $rows = $stmt->fetchAll();
-
-        return $rows;
-
-    }*/
+    
 
     public function updateViandePoisson(){
         $Dao = new Dao();
         $dbh =$Dao->getDbh();
 
         $stmt = $dbh->prepare("UPDATE ViandePoisson SET (productName, typeOfMeat, animal, disappearance,) 
-        VALUES (:productName, :typeOfMeat, :animal, :disappearance,");
+        VALUES (:productName, :typeOfMeat, :animal, :disappearance);");
        
 
        $stmt->bindParam(":productName", $this->productName);

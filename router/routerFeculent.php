@@ -1,8 +1,9 @@
 <?php
-require "../Controller/ControllerFeculent.php";
-
+echo "router";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/controller/controllerFeculent.php");
+echo "dans le routerfeculent avant le if "; 
 if(isset($_GET["action"])){
-
+echo "ok ok ";
     if($_GET["action"] == "all"){
         echo "eh oui";
         ControllerFeculent::getAll();

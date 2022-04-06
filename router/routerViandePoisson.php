@@ -1,8 +1,9 @@
 <?php
-require "./controller/ControllerViandePoisson.php";
-
+echo "router";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/controller/controllerViandePoisson.php");
+echo "dans le routerViandePoisson avant le if "; 
 if(isset($_GET["action"])){
-
+echo "ok ok ";
     if($_GET["action"] == "all"){
         echo "eh oui";
         ControllerViandePoisson::getAll();

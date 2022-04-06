@@ -1,3 +1,7 @@
+<?php 
+
+echo "fff";
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,8 +13,10 @@
 <body>
 
 
-<?php foreach($allfeculent as $feculent): ?>
-        <p><a href="../../router/routerFeculent.php?action=id&id=<?= $feculent["idFeculent"] ?>">Afficher les feculent</a></p>
+<a href="formCreateFeculent.php">ajouter un feculent</a>
+
+<?php foreach($allFeculent as $feculent): ?>
+        <p><a href="../../router/routerFeculent.php?action=id&id=<?=$feculent["idFeculent"] ?>">Afficher les feculent</a></p>
         <ul>
             <li><?= $feculent["productName"]?></li>
             <li><?= $feculent["originPlant"]?></li>
@@ -19,5 +25,8 @@
         </ul>
 
     <?php endforeach ?>
+<?php 
+echo "fin";
+?>
 </body>
 </html>

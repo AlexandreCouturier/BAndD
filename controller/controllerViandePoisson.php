@@ -1,5 +1,7 @@
 <?php
-require_once "./model/ViandePoisson.php";
+echo "contr";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/ViandePoisson.php");
+echo "dans la class controllerdeculent avant la class";
 class ControllerViandePoisson{
 
     public static function getAll(){
@@ -17,8 +19,8 @@ class ControllerViandePoisson{
 
     public static function create($post){
         
-        $ViandePoisson = new ViandePoisson($post['productName'], $post['typeOfMeat'], 
-        $post['animal'], $post['disappearance']);
+        $ViandePoisson = new ViandePoisson($post['productName'], $post['originplant'], 
+        $post['transform'], $post['cooked']);
         $ViandePoisson->createViandePoisson();
         self::getAll();
 
@@ -26,8 +28,8 @@ class ControllerViandePoisson{
 
     public static function update($post){
         
-        $ViandePoisson = new ViandePoisson($post['productName'], $post['typeOfMeat'], 
-        $post['animal'], $post['disappearance']);
+        $ViandePoisson = new ViandePoisson($post['productName'], $post['originplant'], 
+        $post['transform'], $post['cooked']);
         $ViandePoisson->setidViandePoisson($post["id"]);
         $ViandePoisson->updateViandePoisson();
       
@@ -43,7 +45,7 @@ class ControllerViandePoisson{
 
     public static function formUpdate($id){
         $ViandePoisson = ViandePoisson::getViandePoissonByid($id);
-        require "./view/viewViandePoisson/formModif.php";
+        require "../view/viewViandePoisson/formModif.php";
     }
     
 }

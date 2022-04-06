@@ -1,7 +1,7 @@
 <?php
-
-require_once "./Dao.php";
-
+echo "fec";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/dao.php");
+echo "Dans le fichier deculent avant la class " ;
 class Feculent
 {
 
@@ -13,13 +13,12 @@ class Feculent
     
     
    
-    public function __construct($productName, $originPlant, $transform, $cooked,)
+    public function __construct($productName, $originPlant, $transform, $cooked)
     {
         $this->productName = $productName;
         $this->originPlant = $originPlant;
         $this->transform = $transform;
         $this->cooked = $cooked;
-        
         
     }
 
@@ -89,7 +88,7 @@ class Feculent
         $dbh =$Dao->getDbh();
 
         $stmt = $dbh->prepare("UPDATE Feculent SET (productName, originPlant, transform, cooked,) 
-        VALUES (:productName, :originPlant, :transform, :cooked,");
+        VALUES (:productName, :originPlant, :transform, :cooked);");
        
 
        $stmt->bindParam(":productName", $this->productName);
@@ -255,3 +254,5 @@ class Feculent
         return $this;
     }
 }
+
+?>

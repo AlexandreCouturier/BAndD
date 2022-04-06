@@ -1,5 +1,7 @@
 <?php
-require_once "./model/Feculent.php";
+echo "contr";
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/feculent.php");
+echo "dans la class controllerdeculent avant la class";
 class ControllerFeculent{
 
     public static function getAll(){
