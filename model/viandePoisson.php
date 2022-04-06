@@ -57,7 +57,7 @@ class ViandePoisson
     public static function getViandePoissonById($idViandePoisson)
     {
 
-        $request = "SELECT * FROM ViandePoisson WHERE IdViandePoisson = :idViandePoisson";
+        $request = "SELECT * FROM viandePoisson WHERE idViandePoisson = :idViandePoisson";
 
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
@@ -183,45 +183,7 @@ class ViandePoisson
         return $this;
     }
 
-    /**
-     * Get the value of motivation
-     */ 
-    public function getMotivation()
-    {
-        return $this->motivation;
-    }
 
-    /**
-     * Set the value of motivation
-     *
-     * @return  self
-     */ 
-    public function setMotivation($motivation)
-    {
-        $this->motivation = $motivation;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id_Job
-     */ 
-    public function getId_Job()
-    {
-        return $this->id_Job;
-    }
-
-    /**
-     * Set the value of id_Job
-     *
-     * @return  self
-     */ 
-    public function setId_Job($id_Job)
-    {
-        $this->id_Job = $id_Job;
-
-        return $this;
-    }
 
     /**
      * Get the value of idViandePoisson

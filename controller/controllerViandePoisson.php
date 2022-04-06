@@ -8,13 +8,15 @@ class ControllerViandePoisson{
         
 
       $allViandePoisson = ViandePoisson::getAllViandePoisson();
-     require "../view/viewViandePoisson/readAllViandePoisson.php";
+     include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewViandePoisson/readAllViandePoisson.php");
+
     }
 
     public static function getById($id){
         
-        $ViandePoisson = ViandePoisson::getViandePoissonByid($id);
-        require "../view/viewViandePoisson/readByIdViandePoisson.php";
+        $ViandePoisson = ViandePoisson::getViandePoissonById($id);
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewViandePoisson/readByIdViandePoisson.php");
+
     }
 
     public static function create($post){
@@ -44,8 +46,9 @@ class ControllerViandePoisson{
     }
 
     public static function formUpdate($id){
-        $ViandePoisson = ViandePoisson::getViandePoissonByid($id);
-        require "../view/viewViandePoisson/formModif.php";
+        $ViandePoisson = ViandePoisson::getViandePoissonById($id);
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewViandePoisson/formModif.php");
+
     }
     
 }

@@ -1,8 +1,7 @@
 <?php
 echo "router";
 include($_SERVER['DOCUMENT_ROOT']."/BAndD/controller/controllerViandePoisson.php");
-echo "dans le routerViandePoisson avant le if ";
-
+echo "dans le routerViandePoisson avant le if "; 
 if(isset($_GET["action"])){
 echo "ok ok ";
     if($_GET["action"] == "all"){
@@ -18,7 +17,7 @@ echo "ok ok ";
     }elseif($_GET["action"] == "delete"){
         ControllerViandePoisson::deleteById($_GET["id"]);
     }
-echo "BAndD";
+
 }elseif(isset($_POST["submit"])){
    
 echo "ejee";
