@@ -69,6 +69,17 @@ class Drink {
         
       return $stmt->execute();
     }
+
+    public static function deleteDrinkById($idDrink){
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
+        $stmt = $dbh->prepare("DELETE FROM drink WHERE idDrink = :iddrink;");
+         $stmt->bindParam("iddrink",$idDrink);
+         $stmt->execute();
+ 
+        
+         
+    }
     /**
      * Get the value of productName
      */ 

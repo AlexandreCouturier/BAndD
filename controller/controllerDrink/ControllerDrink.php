@@ -30,13 +30,13 @@ Class ControllerDrink{
         $drink->updateDrink();
         self::getAllDrink();
     }
-/*
-    public static function deleteOfferById($id){
+
+    public static function deleteDrinkById($id){
        
-        Offer::deleteOfferById($id);
-        self::getAllOffer();
+        Drink::deleteDrinkById($id);
+        self::getAllDrink();
     }
-*/
+
     public static function formDrinkUpdate($get){
 
         $row = Drink::getDrinkByid($get);

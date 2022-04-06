@@ -16,6 +16,6 @@
             <li><?= $row['sparklingOrStill']?></li>
         </ul>
         <a href="../../../BAndD/router/RouterDrink.php?action=update&idDrink=<?= $row['idDrink']?>">Modifier</a>
-        <a href=""></a>
+        <a href="../../../BAndD/router/RouterDrink.php?action=delete&idDrink=<?= $row['idDrink']?>">Supprimer</a>
 </body>
 </html>

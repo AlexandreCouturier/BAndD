@@ -14,10 +14,10 @@ if(isset($_GET["action"])){
     }elseif($_GET["action"] == "update"){
         ControllerDrink::formDrinkUpdate($_GET["idDrink"]);//envoi vers le formulaire
 
-    }/*elseif($_GET["action"] == "delete"){
-        ControllerOffer::deleteOfferById($_GET["id"]);
+    }elseif($_GET["action"] == "delete"){
+        ControllerDrink::deleteDrinkById($_GET["idDrink"]);
     }
-*/
+
 }elseif(isset($_POST["submit"])){
    echo "dans post submit";
     if(isset($_POST["idDrink"])){
