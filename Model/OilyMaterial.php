@@ -10,12 +10,13 @@ class OilyMaterial{
     private $processedProduct;
     private $ingredientOrConsumable;
 
-    public function __construct($productName,$state,$origin,$processedProduct,$ingredientOrConsumable){
+    public function __construct($productName,$state,$origin,$processedProduct,$ingredientOrConsumable,$idOilyMaterial = NULL){
         $this->productName = $productName;
         $this->state = $state;
         $this->origin = $origin;
         $this->processedProduct = $processedProduct;
-        $this->ingredientOrConsumable = $ingredientOrConsumable;  
+        $this->ingredientOrConsumable = $ingredientOrConsumable;
+        $this->idOilyMaterial = $idOilyMaterial;
     }
 
     /**
@@ -175,26 +176,29 @@ class OilyMaterial{
     }
 
     public static function getFormUpdate($idOilyMaterial){
+
         $dao = new DAO();
+
         $dbh = $dao->getDbh();
         $stmt = $dbh->prepare("SELECT * FROM oilymaterial WHERE idOilyMaterial = :idOilyMaterial;");
         $stmt->bindParam(":idOilyMaterial",$idOilyMaterial);
         $stmt->execute();
-     
         return $stmt->fetch();
+        
     }
 
-    public static function updateOilyMaterial(){
+    public function updateOilyMaterial(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
         $stmt = $dbh->prepare("UPDATE oilymaterial SET productName=:productName, state=:state, origin=:origin, processedProduct=:processedProduct, ingredientOrConsumable=:ingredientOrConsumable WHERE idOilyMaterial = :idOilyMaterial;");
-       
-        $stmt->bindParam(':productName',$productName);
-        $stmt->bindParam(':state',$state);
-        $stmt->bindParam(':origin',$origin);
-        $stmt->bindParam(':processedProduct',$processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable',$ingredientOrConsumable);
+        
+        $stmt->bindParam(':idOilyMaterial',$this->idOilyMaterial);
+        $stmt->bindParam(':productName',$this->productName);
+        $stmt->bindParam(':state',$this->state);
+        $stmt->bindParam(':origin',$this->origin);
+        $stmt->bindParam(':processedProduct',$this->processedProduct);
+        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
        
         return $stmt->execute();
     }

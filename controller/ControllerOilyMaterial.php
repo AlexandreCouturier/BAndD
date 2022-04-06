@@ -6,8 +6,8 @@ Class ControllerOilyMaterial{
 
     public static function getAllOilyMaterial(){
 
-     $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
-     require_once "../view/readAllOilyMaterial.php";
+        $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
+        require_once "../view/readAllOilyMaterial.php";
     }
 
     public static function getOilyMaterialById($idOilyMaterial){
@@ -17,7 +17,7 @@ Class ControllerOilyMaterial{
         
     }
 
-    public function createOilyMaterial($post){
+    public static function createOilyMaterial($post){
         
         $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
         $oilyMaterial->createOilyMaterial();
@@ -25,15 +25,16 @@ Class ControllerOilyMaterial{
 
     }
 
-    public static function getFormUpdate($get){
-        $oilyMaterial = OilyMaterial::getFormUpdate($get);
+    public static function getFormUpdate($id){
+        $oilyMaterial = OilyMaterial::getFormUpdate($id);
+        var_dump($oilyMaterial);
         require "../view/formUpdateOilyMaterial.php";
     }
 
     public static function updateOilyMaterial($post){
+        echo "hshshshshshshshs";
         
-        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable']);
-        $oilyMaterial->setIdOilyMaterial($post['idOilyMaterial']);
+        $oilyMaterial = new OilyMaterial($post['productName'], $post['state'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable'], $post['idOilyMaterial']);
         $oilyMaterial->updateOilyMaterial();
       
         self::getAllOilyMaterial();

@@ -14,13 +14,13 @@
             <input type="hidden" name="idFruitAndVegetable" value="<?= $fruitAndVegetable['idFruitAndVegetable']?>">
 
             <label for="productName">Nom de l'aliment</label>
-            <input type="text" name="productName" id="productName" value="">
+            <input type="text" name="productName" id="productName" required>
 
             <label for="color">Couleur</label>
-            <input type="text" name="color" id="color" value="">
+            <input type="text" name="color" id="color" required>
 
             <label for="taste">Goût</label>
-            <select name="taste" id="taste">
+            <select name="taste" id="taste" >
                 <option value="sweet">Sucré</option>
                 <option value="sour">Acide</option>
                 <option value="salty">Salé</option>
@@ -29,7 +29,7 @@
             </select>
 
             <label for="coldOrHot">Produit naturel ou transformé :</label>
-            <select name="coldOrHot" id="coldOrHot" >
+            <select name="coldOrHot" id="coldOrHot" require >
                 <option value="hot">Chaud</option>
                 <option value="cold">Froid</option>
                 <option value="both">Les deux</option>
