@@ -24,13 +24,13 @@ Class ControllerDrink{
         self::getAllDrink();
     }
 
-   /* public static function updateOffer($post){
-        
-        Offer::updateOffer($post['id_offer'], $post['name_post'], $post['city'], $post['contrat_type'], $post['week_hours'], $post['description'],$post['name_business'], $post['annual_salary'], $post['monthly_pay'], $post['begin'], $post['ending']);
+   public static function updateDrink($post){
+        $drink = new Drink($post['productName'], $post['hotOrCold'], $post['sparklingOrStill'],$post['idDrink']);
 
-        self::getAllOffer();
+        $drink->updateDrink();
+        self::getAllDrink();
     }
-
+/*
     public static function deleteOfferById($id){
        
         Offer::deleteOfferById($id);

@@ -3,14 +3,16 @@ echo "dans la class drink";
 require_once "DAO.php";
 
 class Drink {
+    private $idDrink;
     private $productName;
     private $hotOrCold;
     private $sparklingOrStill;
 
-    public function __construct($productName, $hotOrCold, $sparklingOrStill){
+    public function __construct($productName, $hotOrCold, $sparklingOrStill, $idDrink = NULL){
         $this->productName = $productName;
         $this->hotOrCold = $hotOrCold;
         $this->sparklingOrStill = $sparklingOrStill;
+        $this->idDrink = $idDrink;
     }
 
     public function createDrink(){
@@ -54,6 +56,19 @@ class Drink {
         return $stmt->fetch();
     }
 
+    public function updateDrink(){
+        $dao = new DAO();
+        $dbh =$dao->getDbh();
+
+        $stmt = $dbh->prepare("UPDATE drink SET productName=:add, hotOrCold=:zip, sparklingOrStill=:city WHERE idDrink=:iddrink");
+
+        $stmt->bindParam(':add', $this->productName);
+        $stmt->bindParam(':zip',$this->hotOrCold);
+        $stmt->bindParam(':iddrink',$this->idDrink);
+        $stmt->bindParam(':city',$this->sparklingOrStill);
+        
+      return $stmt->execute();
+    }
     /**
      * Get the value of productName
      */ 

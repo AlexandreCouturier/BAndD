@@ -20,11 +20,11 @@ if(isset($_GET["action"])){
 */
 }elseif(isset($_POST["submit"])){
    echo "dans post submit";
-    if(isset($_POST["id"])){
-        /*
-        ControllerOffer::updateOffer($_POST);//enregistre le formulaire
+    if(isset($_POST["idDrink"])){
+        
+        ControllerDrink::updateDrink($_POST);//enregistre le formulaire
      
-*/
+
     }else{
         echo "avant la fonction controllerdrink::createdrink";
         ControllerDrink::createDrink($_POST);
