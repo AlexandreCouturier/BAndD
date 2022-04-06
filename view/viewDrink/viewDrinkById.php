@@ -15,7 +15,7 @@
             <li><?= $row['hotOrCold']?></li>
             <li><?= $row['sparklingOrStill']?></li>
         </ul>
-        <a href=""></a>
+        <a href="../../router/RouterDrink.php?action=update&idDrink=<?= $row['idDrink']?>">Modifier</a>
         <a href=""></a>
 </body>
 </html>

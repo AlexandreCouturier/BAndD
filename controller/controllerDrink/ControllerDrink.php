@@ -37,10 +37,10 @@ Class ControllerDrink{
         self::getAllOffer();
     }
 */
-    public static function formDrinkUpdate($idDrink){
+    public static function formDrinkUpdate($get){
 
-        $Offer = Drink::getDrinkByid($idDrink);
-        require "/viewOffer/formUpdateOffer.php";
+        $drink = Drink::getDrinkByid($get);
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewDrink/formDrinkUpdate.php");
     }
 
     public static function formOffer(){
