@@ -32,9 +32,8 @@ Class ControllerFruitAndVegetable{
     }
 
     public static function updateFruitAndVegetable($post){
-        
-        FruitAndVegetable::updateFruitAndVegetable($post['idFruitAndVegetable'],$post['productName'], $post['color'], $post['taste'], $post['coldOrHot']);
-        $fruitAndVegetable->setIdFruitAndVegetable($post['idFruitAndVegetable']);
+        echo "hshshshshshshshs";
+        $fruitAndVegetable = new FruitAndVegetable($post['productName'], $post['color'], $post['taste'], $post['coldOrHot'],$post['idFruitAndVegetable']);
         $fruitAndVegetable->updateFruitAndVegetable();
       
         self::getAllFruitAndVegetable();
@@ -46,7 +45,6 @@ Class ControllerFruitAndVegetable{
     
         self::getAllFruitAndVegetable();
 
-        echo "sdosqjdkqsjdklsq5555";
     }
     
 }

@@ -20,7 +20,7 @@ if(isset($_GET["action"])){
 
         if(isset($_POST["idFruitAndVegetable"])){
 
-        ControllerFruitAndVegetable::updateFruitAndVegetable($_POST["idFruitAndVegetable"]);//enregistre le formulaire
+        ControllerFruitAndVegetable::updateFruitAndVegetable($_POST);//enregistre le formulaire
      
         }else{
 

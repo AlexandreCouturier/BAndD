@@ -9,11 +9,12 @@ class FruitAndVegetable{
     private $taste;
     private $coldOrHot;
 
-    public function __construct($productName,$color,$taste,$coldOrHot){
+    public function __construct($productName,$color,$taste,$coldOrHot,$idFruitAndVegetable = NULL){
         $this->productName = $productName;
         $this->color = $color;
         $this->taste = $taste;
         $this->coldOrHot = $coldOrHot;  
+        $this->idFruitAndVegetable = $idFruitAndVegetable;
     }
 
         /**
@@ -151,27 +152,28 @@ class FruitAndVegetable{
         return $stmt->fetchAll();
     }
 
-    public static function getFormUpdate($idFruitAndVegetable,$productName,$color,$taste,$coldOrHot){
+    public static function getFormUpdate($idFruitAndVegetable){
+ 
         $dao = new DAO();
+
         $dbh = $dao->getDbh();
         $stmt = $dbh->prepare("SELECT * FROM fruitandvegetable WHERE idFruitAndVegetable = :idFruitAndVegetable;");
         $stmt->bindParam(":idFruitAndVegetable",$idFruitAndVegetable);
         $stmt->execute();
-     
         return $stmt->fetch();
     }
 
-    public static function updateFruitAndVegetable($idFruitAndVegetable,$productName,$color,$taste,$coldOrHot){
+    public function updateFruitAndVegetable(){
         $dao = new DAO();
         $dbh =$dao->getDbh();
 
         $stmt = $dbh->prepare("UPDATE fruitandvegetable SET productName=:productName, color=:color, taste=:taste, coldOrHot=:coldOrHot WHERE idFruitAndVegetable = :idFruitAndVegetable;");
     
-        $stmt->bindParam(':idFruitAndVegetable',$idFruitAndVegetable);
-        $stmt->bindParam(':productName',$productName);
-        $stmt->bindParam(':color',$color);
-        $stmt->bindParam(':taste',$taste);
-        $stmt->bindParam(':coldOrHot',$coldOrHot);
+        $stmt->bindParam(':idFruitAndVegetable',$this->idFruitAndVegetable);
+        $stmt->bindParam(':productName',$this->productName);
+        $stmt->bindParam(':color',$this->color);
+        $stmt->bindParam(':taste',$this->taste);
+        $stmt->bindParam(':coldOrHot',$this->coldOrHot);
        
         return $stmt->execute();
     }
