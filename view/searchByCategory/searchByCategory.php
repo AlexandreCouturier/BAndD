@@ -15,8 +15,8 @@
             <label for="choice">Faite votre choix</label>
             <select name="choice" id="choix">
                 <option value="0" style="display: none;" selected>Choissisez... </option>
-                <option value="1">Ajouter une matière grasse</option>
-                <option value="2">Ajouter un fruit ou un légumes</option>
+                <option value="1">Ajouter un fruit ou un légumes</option>
+                <option value="2">Ajouter une matière grasse</option>
                 
             </select>
         </form>

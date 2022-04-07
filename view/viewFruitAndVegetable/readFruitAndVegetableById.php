@@ -18,8 +18,8 @@
         <li><?=$fruitAndVegetable['coldOrHot']?></li>
     </ul>
 
-    <a href="../../router/RouterFruitAndVegetable.php?action=updateFruitAndVegetable&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Modifier</a>
-    <a href="../../router/RouterFruitAndVegetable.php?action=deleteFruitAndVegetableById&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Supprimer</a>
+    <a href="../router/RouterFruitAndVegetable.php?action=updateFruitAndVegetable&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Modifier</a>
+    <a href="../router/RouterFruitAndVegetable.php?action=deleteFruitAndVegetableById&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Supprimer</a>
 
   
 </body>

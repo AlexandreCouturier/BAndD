@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <form action="../../router/RouterOilyMaterial.php" method="post">
+    <form action="../router/RouterOilyMaterial.php" method="post">
         
             <input type="hidden" name="idOilyMaterial" value="<?=$oilyMaterial['idOilyMaterial']?>">
 
