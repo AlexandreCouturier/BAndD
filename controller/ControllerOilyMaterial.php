@@ -7,13 +7,13 @@ Class ControllerOilyMaterial{
     public static function getAllOilyMaterial(){
 
         $allOilyMaterial = OilyMaterial::getAllOilyMaterial();
-        require_once "../view/readAllOilyMaterial.php";
+        require_once "../view/viewOilyMaterial/readAllOilyMaterial.php";
     }
 
     public static function getOilyMaterialById($idOilyMaterial){
         
         $oilyMaterial = OilyMaterial::getOilyMaterialById($idOilyMaterial);
-        require_once "../view/readOilyMaterialById.php";
+        require_once "../view/viewOilyMaterial/readOilyMaterialById.php";
         
     }
 
@@ -28,7 +28,7 @@ Class ControllerOilyMaterial{
     public static function getFormUpdate($id){
         $oilyMaterial = OilyMaterial::getFormUpdate($id);
         var_dump($oilyMaterial);
-        require "../view/formUpdateOilyMaterial.php";
+        require "../view/viewOilyMaterial/formUpdateOilyMaterial.php";
     }
 
     public static function updateOilyMaterial($post){

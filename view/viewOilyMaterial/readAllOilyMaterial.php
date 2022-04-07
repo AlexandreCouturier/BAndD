@@ -20,7 +20,7 @@
             <li><?=$oilyMaterial["processedProduct"]?></li>
             <li><?=$oilyMaterial["ingredientOrConsumable"]?></li>
 
-            <a href="../router/RouterOilyMaterial.php?action=idOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Afficher cet aliment</a>
+            <a href="../../router/RouterOilyMaterial.php?action=idOilyMaterial&idOilyMaterial=<?=$oilyMaterial["idOilyMaterial"]?>">Afficher cet aliment</a>
         </ul>
     <?php endforeach?>
    

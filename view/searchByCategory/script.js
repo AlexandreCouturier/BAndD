@@ -5,10 +5,10 @@ const select = document.getElementById('choix');
                  
                 switch (valeur) {
                     case 1:
-                        changeURL('./formFruitAndVegetable.php');
+                        changeURL('../viewFruitAndVegetable/formFruitAndVegetable.php');
                         break;
                     case 2:
-                        changeURL('./formOilyMaterial');
+                        changeURL('../viewOilyMaterial/formOilyMaterial');
                         break;
                    /* case 3:
                         changeURL('http://google.com');

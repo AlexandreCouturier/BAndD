@@ -6,14 +6,14 @@ Class ControllerFruitAndVegetable{
     public static function getAllFruitAndVegetable(){
 
      $allFruitAndVegetable = FruitAndVegetable::getAllFruitAndVegetable();
-     require_once "../view/readAllFruitAndVegetable.php";
+     require_once "../view/viewFruitAndVegetable/readAllFruitAndVegetable.php";
 
     }
 
     public static function getFruitAndVegetableById($idFruitAndVegetable){
         
         $fruitAndVegetable = FruitAndVegetable::getFruitAndVegetableById($idFruitAndVegetable);
-        require_once "../view/readFruitAndVegetableById.php";
+        require_once "../view/viewFruitAndVegetable/readFruitAndVegetableById.php";
 
     }
 
@@ -29,7 +29,7 @@ Class ControllerFruitAndVegetable{
     public static function getFormUpdate($idFruitAndVegetable){
         $fruitAndVegetable = FruitAndVegetable::getFormUpdate($idFruitAndVegetable);
         var_dump($fruitAndVegetable);
-        require "../view/formUpdateFruitAndVegetable.php";
+        require "../view/viewFruitAndVegetable/formUpdateFruitAndVegetable.php";
     }
 
     public static function updateFruitAndVegetable($post){

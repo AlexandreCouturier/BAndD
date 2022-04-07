@@ -19,7 +19,7 @@
             <li><?=$fruitAndVegetable["taste"]?></li>
             <li><?=$fruitAndVegetable['coldOrHot']?></li>
 
-            <a href="../router/RouterFruitAndVegetable.php?action=idFruitAndVegetable&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Afficher cet aliment</a>
+            <a href="../../router/RouterFruitAndVegetable.php?action=idFruitAndVegetable&idFruitAndVegetable=<?=$fruitAndVegetable["idFruitAndVegetable"]?>">Afficher cet aliment</a>
         </ul>
     <?php endforeach?>
    
