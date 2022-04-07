@@ -14,18 +14,15 @@
             <input type="text" name="productName" id="">
             <label for="animalOrPlant">De quel animal ou plante proviens le produit laitier :</label>
             <input type="text" name="animalOrPlant" id="">
-        <p>Quel est l'état de co :</p>
-            <label for="state">Chaude</label>
-                <input type="radio" name="state" id="" value="chaude">
-            <label for="state">Froide</label>
-                <input type="radio" name="state" id="" value="froide">
-            <label for="state">Les deux</label>
-                <input type="radio" name="state" id="" value="deux">
-        <p>La boisson est tel plate ou gazeuse : </p>
-            <label for="sparklingOrStill">Plate</label>
-                <input type="radio" name="sparklingOrStill" id="" value="plate">
-            <label for="sparklingOrStill">Gazeuse</label>
-                <input type="radio" name="sparklingOrStill" id="" value="gazeuse">
+        <p>Quel est l'état de composition:</p>
+            <label for="state">Liquide</label>
+                <input type="radio" name="state" id="" value="liquide">
+            <label for="state">Solide</label>
+                <input type="radio" name="state" id="" value="solide">
+            <label for="state">Gazeux</label>
+                <input type="radio" name="state" id="" value="gazeux">
+                <label for="fermentation">Le temps de fermentation en jours :</label>
+            <input type="number" name="fermentation" id="">
 
                 <input type="submit" value="Envoyer" name="submit">
     </form>

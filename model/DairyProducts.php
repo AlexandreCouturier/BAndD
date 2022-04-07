@@ -13,7 +13,7 @@ class DairyProducts {
         $this->productName = $productName;
         $this->animalOrPlant = $animalOrPlant;
         $this->state = $state;
-        $this->fermentation = $fermentation;
+        $this->fermentation = (int)$fermentation;
         $this->idDairyProducts = $idDairyProducts;
     }
 

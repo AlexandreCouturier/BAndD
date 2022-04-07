@@ -6,7 +6,7 @@ Class ControllerDairyProducts{
 
     public static function getAllDairyProducts(){
         $allRows = DairyProducts::getAllDairyProducts();
-        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/test.php");
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewDairyProducts/viewDairyProductsAll.php");
     }
 
     public static function getDairyProductsById($idDairyProducts){
