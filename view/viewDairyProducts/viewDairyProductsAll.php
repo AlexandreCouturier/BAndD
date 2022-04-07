@@ -8,7 +8,7 @@
 </head>
 <?php echo "dans le fichier test.php" ?>
 <body>
-<a href="../view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
+<a href="../../view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
     <?php foreach($allRows as $row): ?>
     <p>Votre boisson est : </p>
         <?= $row["productName"]?> <br>
