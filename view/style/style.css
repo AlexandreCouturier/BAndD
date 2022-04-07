@@ -56,6 +56,35 @@ ul a li{
     width: 100%;
     background: linear-gradient(to bottom, #36773080, transparent);
 }
+h1{
+    font-family: 'flowers';
+    font-size: 40px;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.digestion{
+    background: #e2e1e1;
+    width: 80%;
+    height: 1000px;
+    padding: 50px;
+}
+article{
+    color: #101010;
+}
+h3{
+    text-decoration: underline;
+    color: #367730;
+}
+.texteOrange{
+    color: #ff9829;
+}
+.gras{
+    font-weight: bold;
+}
 @media screen and (max-width: 1305px) {
     ul.nav  {
         font-size: 30px;
