@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "sendflowers";
+    src: url("../Fonts/sendFlowers/SendFlowers-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../Fonts/roboto/Roboto-Regular.ttf");
+}
+
+h3{
+    font-family: "sendflowers";
+    color: #367730;
+    text-decoration: underline;
+}
+
+#category{
+    position: absolute;
+    width: 1074px;
+    height: 300px;
+    left: 149px;
+    top: 517px;
+}
+
+.img_cat{
+    width: 300px;
+    height: 300px;
+    left: 149px;
+    top: 517px;
+    mix-blend-mode: normal;
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    border-radius: 146.5px;
+}
+#boisson{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/eau_gazeuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#fruit{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/fruits2.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#feculent{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/legumineuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#laitier{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#viande{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/beef_steak.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#gras{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/butter.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#sucrerie{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cup_cake.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 1074px;
+    height: 300px;
+    left: 149px;
+    top: 517px;
+}
+
+.description{
+    width: 702px;
+    height: 189px;
+    left: 521px;
+    top: 529px;
+    justify-content: center;
+}
