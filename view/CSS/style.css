@@ -12,7 +12,6 @@ header{
     display: flex;
     align-items: center;
 }
-
 #logo{
     width: 200px;
     margin: 50px;
@@ -50,7 +49,6 @@ ul a li{
     width: 100%;
     background: linear-gradient(to bottom, #36773080, transparent);
 }
-
 h3{
     font-family: "sendflowers";
     color: #367730;
@@ -72,7 +70,6 @@ h3{
     display: flex;
     justify-content: center;
 }
-
 #boisson{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
     background-image: url("../images/eau_gazeuse.jpeg");
@@ -152,4 +149,51 @@ h3{
     left: 521px;
     top: 529px;
     
+}
+h2{
+    font-family: "sendflowers";
+    font-size: 2.3em;
+    color: #367730;
+    text-decoration: underline;
+}
+h4{
+    font-family: "sendflowers";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+h5{
+    font-family: "roboto";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1em;
+}
+#drink{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/eau_gazeuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#tea{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/tea.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#coffe{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/coffe.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
