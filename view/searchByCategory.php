@@ -10,15 +10,17 @@
 
 
     <form name="form" >
-        
-        <select size="1"  onChange="location = this.options[this.selectedIndex].value;">
-	        <option value="lien.html" >1</option>
-	        <option value="lien.html" >2</option>
-	        <option value="lien.html" >3</option>
-        </select>
 
-    </form>
+        <form action="" method="post">
+            <label for="choice">Faite votre choix</label>
+            <select name="choice" id="choix">
+                <option value="0" style="display: none;" selected>Choissisez... </option>
+                <option value="1">Ajouter une matière grasse</option>
+                <option value="2">Ajouter un fruit ou un légumes</option>
+                
+            </select>
+        </form>
        
-<script ></script>
+ <script src="script.js" ></script>
 </body>
 </html>
