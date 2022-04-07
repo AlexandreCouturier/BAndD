@@ -60,6 +60,7 @@ h1{
     font-family: 'flowers';
     font-size: 40px;
     text-align: center;
+    font-weight: normal;
 }
 main{
     display: flex;
@@ -81,6 +82,7 @@ article{
 h3{
     text-decoration: underline;
     color: #367730;
+    font-weight: normal;
 }
 .texteOrange{
     color: #ff9829;
@@ -91,7 +93,7 @@ h3{
 .gras{
     font-weight: bold;
 }
-#dent, #estomac, #intestin, #foie, #colon{
+.digestion img, .detailsAssociation img{
     width: 200px;
 }
 .bouche, .estomac, .intestin, .foie, .colon{
@@ -110,6 +112,21 @@ figure.gauche{
 figure.droite{
     margin-left: 80px;
     margin-right: 0;
+}
+.detailsAssociation {
+    width: 80%;
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.troisParties{
+    display: flex;
+}
+.troisParties aside{
+    display: flex;
+    align-items: center;
 }
 @media screen and (max-width: 1305px) {
     ul.nav  {
@@ -144,5 +161,12 @@ figure.droite{
     ul.nav{
         flex-wrap: wrap;
         height: max-content;
+    }
+    .bouche,
+    .estomac,
+    .intestin,
+    .foie,
+    .colon {
+        flex-wrap: wrap;
     }
 }

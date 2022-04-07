@@ -141,6 +141,75 @@
         </article>
       </div>
     </section>
+
+    <section class="detailsAssociation">
+      <div class="troisParties">
+        <aside>
+          <figure>
+            <img src="./image/viandes.png" alt="viandes">
+            <img src="./image/pain.png" alt="pain">
+          </figure>
+        </aside>
+        <article>
+          <h3>Les grandes règles des bonnes associations alimentaires</h3>
+          <p>Si on comprend bien la digestion, il faudrait principalement <span class="texteOrange">éviter</span> de
+            consommer au même repas des <span class="texteOrange">protéines et des glucides</span>/amidons. C’est
+            le principe même du régime dissocié lancé par Dr Shelton, un
+            nutritionniste américain du 20ème siècle. Cette méthode permet entre
+            autre de digérer correctement et d’apporter du <span class="texteOrange">repos</span> à nos chers <span class="texteOrange">intestins</span>.
+            Cela signifie par exemple viande et légumes à midi et riz et légumes au
+            dîner. En revanche elle n’est pas conseillée sur le long terme (pas plus de
+            trois mois et selon vote vitalité) car il peut entraîner des carences et des
+            problèmes d’assimilation.
+            On pourra tout de même garder en tête quelques principes de cette
+            <span class="texteOrange">dissociation</span> en apportant quelques <span class="texteOrange">ajustements</span>.
+          </p>
+
+          <p>
+            On distingue tout d’abord:
+          </p>
+          <p>
+            les <span class="texteVert gras">PROTEINES FORTES</span> : viande, œufs, poisson, volaille, fruits de mer,
+            fromage à pâte cuite
+          </p>
+          <p>
+            les <span class="texteVert gras">PROTEINES FAIBLES</span> : légumineuses, soja, champignons, algues,
+            tempeh, oléagineux, fromage frais de chèvre et brebis
+          </p>
+          <p>
+            les <span class="texteVert gras">AMIDONS FORTS</span> : pain, pâtes, riz, céréales, quinoa, sarrasin
+          </p>
+          <p>
+            les <span class="texteVert gras">AMIDONS FAIBLES</span> : pomme de terre, patate douce, châtaigne,
+            potimarrons, flocons de céréales, potiron
+          </p>
+          <p>
+            Voici quelques <span class="texteOrange">combinaisons</span> gagnantes pour une bonne assimilation, une
+            bonne digestion et un ventre plat:</p>
+          <p>
+            <span class="texteOrange">Protéines fortes + amidons faibles + légumes</span>
+          </p>
+          <p>
+            <span class="texteOrange">Protéines faibles + amidons forts + légumes</span>
+          </p>
+          <p>
+            Les légumes crus et cuits peuvent s’associer avec tous les aliments
+            Les fruits toujours en dehors des repas
+            Le dessert sucré plutôt à déplacer à l’heure du goûter (16-18h) car le
+            sucre freine la digestion.
+            Le miel se consomme seul sinon il fermente ou dans un infusion
+            légèrement refroidi pour ne pas altérer ses propriétés.
+          </p>
+        </article>
+        <aside>
+          <figure>
+            <img src="./image/poissons.png" alt="poissons">
+            <img src="./image/patates.png" alt="patates">
+          </figure>
+        </aside>
+      </div>
+    </section>
+
   </main>
 
 </body>
