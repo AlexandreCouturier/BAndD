@@ -65,12 +65,15 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 .digestion{
     background: #e2e1e1;
     width: 80%;
-    height: 1000px;
+    height: max-content;
     padding: 50px;
+    display: flex;
+    justify-content: center;
 }
 article{
     color: #101010;
@@ -82,8 +85,31 @@ h3{
 .texteOrange{
     color: #ff9829;
 }
+.texteVert {
+    color: #367730;
+}
 .gras{
     font-weight: bold;
+}
+#dent, #estomac, #intestin, #foie, #colon{
+    width: 200px;
+}
+.bouche, .estomac, .intestin, .foie, .colon{
+    display: flex;
+}
+.systemeDigestif{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+}
+figure.gauche{
+    margin-left: 0;
+    margin-right: 80px;
+}
+figure.droite{
+    margin-left: 80px;
+    margin-right: 0;
 }
 @media screen and (max-width: 1305px) {
     ul.nav  {
