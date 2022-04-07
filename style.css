@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'send flowers';
+    src: url('../font/SendFlowers-Regular.ttf');
+}
+body{
+    font-family: roboto;
+    
+    color: #367730;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 200px;
+    margin: 50px;
+}
+ul.nav{
+    background: #e2e1e1;
+    font-size: 40px;
+    border: solid 1px #367730;
+    margin-left: 50px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 119px;
+    margin: 0;
+    padding: 0;
+}
+ul a{
+    height: 119px;
+    text-decoration: none;
+    color: #367730;
+}
+ul a:hover {
+    background: #367730;
+    color: #e2e1e1;
+}
+ul a li{
+    height: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.degradeVert{
+    height: 78px;
+    width: 100%;
+    background: linear-gradient(to bottom, #36773080, transparent);
+}
+h1{
+    font-family: 'flowers';
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.digestion{
+    background: #e2e1e1;
+    width: 80%;
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+article{
+    color: #101010;
+}
+h3{
+    text-decoration: underline;
+    color: #367730;
+    font-weight: normal;
+}
+.texteOrange{
+    color: #ff9829;
+}
+.texteVert {
+    color: #367730;
+}
+.gras{
+    font-weight: bold;
+}
+.digestion img, .detailsAssociation img{
+    width: 200px;
+}
+.bouche, .estomac, .intestin, .foie, .colon{
+    display: flex;
+}
+.systemeDigestif{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 30px;
+}
+figure.gauche{
+    margin-left: 0;
+    margin-right: 80px;
+}
+figure.droite{
+    margin-left: 80px;
+    margin-right: 0;
+}
+.detailsAssociation {
+    width: 80%;
+    height: max-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.troisParties{
+    display: flex;
+}
+.troisParties aside{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1305px) {
+    ul.nav  {
+        font-size: 30px;
+    }
+    ul.nav a li {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1060px) {
+    ul.nav {
+        font-size: 25px;
+    }
+    
+    ul.nav a li {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 920px) {
+    ul.nav {
+        font-size: 20px;
+    }
+    
+    ul.nav a li {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    ul.nav, ul a, ul a li {
+        height: 80px;
+    }
+    ul.nav{
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .bouche,
+    .estomac,
+    .intestin,
+    .foie,
+    .colon {
+        flex-wrap: wrap;
+    }
+}
