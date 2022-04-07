@@ -144,12 +144,9 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 702px;
-    height: 189px;
-    left: 521px;
-    top: 529px;
-    
+    width: 702px; 
 }
+/*drink.php*/
 h2{
     font-family: "sendflowers";
     font-size: 2.3em;
@@ -208,11 +205,37 @@ h5{
     display: flex;
     flex-direction: column;
     width: 702px;
-    height: 189px;
-    left: 521px;
-    top: 529px;
-    
 }
-p{
-    
+/*meat.php*/
+#img_meat{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/beef_steak.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_fish{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/fish.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_eggs{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/eggs.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_legume{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/legumineuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
 }
