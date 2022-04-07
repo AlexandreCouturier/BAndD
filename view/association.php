@@ -143,7 +143,7 @@
         <section class="mauvaisesAssociations">
             <div class="troisPartiesSuite">
                 <div class="imageGauche"></div>
-                <div>
+                <div class="divCentre">
                     <article>
                         <h3>1/ Fer + café ou thé</h3>
                         <p>
@@ -161,8 +161,8 @@
                             désagréables.</p>
                         <p>
                             Pour limiter ces désagréments, l’apport de <span class="texteOrange">fibres</span> sous forme de légumes diminuera
-                                les troubles digestifs provoqués par l’association de ces deux catégories
-                                d’aliments.
+                            les troubles digestifs provoqués par l’association de ces deux catégories
+                            d’aliments.
                         </p>
                     </article>
                 </div>
@@ -173,7 +173,17 @@
                 </aside>
             </div>
         </section>
-
+        <section class="motDeLaFaim">
+            <h2>Le mot de la faim</h2>
+            <article class="motFaimArticle">
+                <p>
+                    Bien sûr notre vie sociale ne nous permet pas toujours de respecter ces <span class="texteOrange">associations</span> alimentaires. Je vous conseille ainsi de
+                    suivre la règle des <span class="texteOrange gras">80/20</span>, soit 80% de protéines fortes et 20% d’amidons forts ou le contraire
+                    N’oublions pas que <span class="texteOrange">simplifier</span> les apports alimentaires au cours d’un seul et même repas est un gage de bonne digestion et
+                        d’une bonne santé !
+                </p>
+            </article>
+        </section>
     </main>
 
 </body>
