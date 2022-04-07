@@ -15,22 +15,27 @@
     <div id=main>
         <h2>Les Boissons</h2>
 
-        <div id=drink></div>
+        <div id=drink>
+
+        </div>
 
         <h4>Eau plate/Eau Gazeuse</h4>
 
-        <h5>Rôle:</h5>
-        <p>Permet de compenser quotidiennement les pertes urinaires (1 500 ml/j) et fécales (100-150 g/j), ou par voie cutanée (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par voie respiratoire (800 ml/j).</p>
-    
+        <div class=descriptioncat>
+            <h5>Rôle:</h5>
+            <p>Permet de compenser quotidiennement les pertes urinaires (1 500 ml/j) et fécales (100-150 g/j), ou par voie cutanée (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par voie respiratoire (800 ml/j).</p>
+        </div>
+        
         <div id=otherdrink>
             <div id=tea></div>
             <div id=coffe></div>
         </div>
 
-            <h5>Besoins</h5>
-            <p>1,2 L à 2,5 L au minimum selon l’activité physique et les conditions climatiques.
-        Il est conseillé de varier les eaux : du robinet ou en bouteilles (minérales, de source) puisque chacune d’entre elles est plus ou moins composée en minéraux.</p>
-
-</div>
+            <div class=descriptioncat>
+                <h5>Besoins</h5>
+                <p>1,2 L à 2,5 L au minimum selon l’activité physique et les conditions climatiques.
+                Il est conseillé de varier les eaux : du robinet ou en bouteilles (minérales, de source) puisque chacune d’entre elles est plus ou moins composée en minéraux.</p>
+            </div>
+    </div>
 </body>
 </html>
