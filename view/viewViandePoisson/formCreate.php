@@ -7,19 +7,19 @@
     <title>Saisir produit</title>
 </head>
 <body>
-<a href="../../../BAndD/router/routerViandePoisson.php?action=all">les viande et poisson</a>
+<a href="../../../BAndD/router/routerViandePoisson.php?action=all">toute les viandes poisson et oeuf</a>
 
 
     <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
 
         <label for="productName">productName</label>
-        <input type="select" name="productName" id="productName">
+        <input type="text" name="productName" id="productName">
 
         <label for="TypeOfMeat">typeofmeat</label>
-        <input type="text" name="address" id="address">
+        <input type="text" name="typeOfMeat" id="">
 
         <label for="animal">animal</label>
-        <input type="text name="animal" id="animal">
+        <input type="text" name="animal" id="animal">
 
         <label for="disappearance">disapear</label>
         <input type="text" name="disappearance" id="disappearance">

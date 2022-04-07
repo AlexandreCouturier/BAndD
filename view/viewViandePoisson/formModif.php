@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<a href="../../../BAndD/router/routerViandePoisson.php?action=all">les ViandePoissones</a>
+<a href="../../../BAndD/router/routerViandePoisson.php?action=all">toute les viande et poisson oeuf</a>
 
 
     <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
@@ -17,16 +17,16 @@
         <input type="hidden" name="id" value="<?=$ViandePoisson['idViandePoisson']?>">
 
         <label for = "productName"> name </label>
-        <input type = "productName" name = "productName" id = "productName" required value="<?=$ViandePoisson['productName']?>"> <br>
+        <input type = "text" name = "productName" id = "productName" required value="<?=$ViandePoisson['productName']?>"> <br>
 
-        <label for = "typeOfMeat"> Votre ViandePoisson:  </label> 
+        <label for = "typeOfMeat"> type de viande </label> 
         <input type = "text" name = "typeOfMeat" id = "typeOfMeat" value="<?=$ViandePoisson['typeOfMeat']?>" required> <br>
 
-        <label for = "animal"> Code postale:  </label> 
-        <input type = "productName" name = "animal" id = "animal" value="<?=$ViandePoisson['animal']?>" required> <br>
+        <label for = "animal"> animale </label> 
+        <input type = "text" name = "animal" id = "animal" value="<?=$ViandePoisson['animal']?>" required> <br>
 
-        <label for = "disappearance"> Ville </label>
-        <input type = "texte" name = "disappearance" id = "disappearance" value="<?=$ViandePoisson['disappearance']?>"> <br>
+        <label for = "disappearance"> disparition </label>
+        <input type = "text" name = "disappearance" id = "disappearance" value="<?=$ViandePoisson['disappearance']?>"> <br>
 
         <label for="Envoyer"></label>
         <input type="submit" name="submit"  value="Envoyer">

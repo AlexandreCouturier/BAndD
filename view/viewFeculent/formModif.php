@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<a href="../../../BAndD/router/routerFeculent.php?action=all">les Feculentes</a>
+<a href="../../../BAndD/router/routerFeculent.php?action=all">toute les feculent</a>
 
 
     <form action="../../../BAndD/router/routerFeculent.php" method="post">
@@ -17,16 +17,16 @@
         <input type="hidden" name="id" value="<?=$Feculent['idFeculent']?>">
 
         <label for = "productName"> name </label>
-        <input type = "productName" name = "productName" id = "productName" required value="<?=$Feculent['productName']?>"> <br>
+        <input type = "text" name = "productName" id = "productName" required value="<?=$Feculent['productName']?>"> <br>
 
-        <label for = "originPlant"> Votre Feculent:  </label> 
+        <label for = "originPlant"> origin de la plante </label> 
         <input type = "text" name = "originPlant" id = "originPlant" value="<?=$Feculent['originPlant']?>" required> <br>
 
-        <label for = "transform"> Code postale:  </label> 
-        <input type = "productName" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" required> <br>
+        <label for = "transform"> transforme </label> 
+        <input type = "text" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" required> <br>
 
-        <label for = "cooked"> Ville </label>
-        <input type = "texte" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>"> <br>
+        <label for = "cooked"> preparé ou pas</label>
+        <input type = "text" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>"> <br>
 
         <label for="Envoyer"></label>
         <input type="submit" name="submit"  value="Envoyer">

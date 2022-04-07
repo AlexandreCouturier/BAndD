@@ -21,8 +21,8 @@ class ControllerViandePoisson{
 
     public static function create($post){
         
-        $ViandePoisson = new ViandePoisson($post['productName'], $post['originplant'], 
-        $post['transform'], $post['cooked']);
+        $ViandePoisson = new ViandePoisson($post['productName'], $post['typeOfMeat'], 
+        $post['animal'], $post['disappearance']);
         $ViandePoisson->createViandePoisson();
         self::getAll();
 
@@ -30,8 +30,8 @@ class ControllerViandePoisson{
 
     public static function update($post){
         
-        $ViandePoisson = new ViandePoisson($post['productName'], $post['originplant'], 
-        $post['transform'], $post['cooked']);
+        $ViandePoisson = new ViandePoisson($post['productName'], $post['typeOfMeat'], 
+        $post['animal'], $post['disappearance']);
         $ViandePoisson->setidViandePoisson($post["id"]);
         $ViandePoisson->updateViandePoisson();
       

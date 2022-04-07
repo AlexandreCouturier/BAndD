@@ -14,7 +14,7 @@ class ViandePoisson
     
     
    
-    public function __construct($productName, $typeOfMeat, $animal, $disappearance)
+    public function __construct($productName, $typeOfMeat, $animal, $disappearance, $idViandePoisson=NULL)
     {
         $this->productName = $productName;
         $this->typeOfMeat = $typeOfMeat;
@@ -28,7 +28,7 @@ class ViandePoisson
     public static function getAllViandePoisson(){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM ViandePoisson;");
+        $stmt = $dbh->prepare("SELECT * FROM viandePoisson;");
         $stmt->execute();
         
         return $stmt->fetchAll();
@@ -36,39 +36,34 @@ class ViandePoisson
 
     public function createViandePoisson()
     {
-
-        $request = "INSERT INTO ViandePoisson (productName, typeOfMeat, animal, disappearance,) 
-            VALUES (:productName, :typeOfMeat, :animal, :disappearance)";
-
+        echo "MYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYB";
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
 
-        $stmt = $dbh->prepare($request);
+        $stmt = $dbh->prepare("INSERT INTO viandePoisson(productName,typeOfMeat,animal,disappearance) 
+        VALUES(:un,:deu,:troi,:quatre);");
 
-        $stmt->bindParam(":productName", $this->productName);
-        $stmt->bindParam(":typeOfMeat", $this->typeOfMeat);
-        $stmt->bindParam(":animal", $this->animal);
-        $stmt->bindParam(":disappearance", $this->disappearance);
+        $stmt->bindParam(":un", $this->productName);
+        $stmt->bindParam(":deu", $this->typeOfMeat);
+        $stmt->bindParam(":troi", $this->animal);
+        $stmt->bindParam(":quatre", $this->disappearance);
    
 
-        $stmt->execute();
+        return $stmt->execute();
     }
 
-    public static function getViandePoissonById($idViandePoisson)
-    {
 
-        $request = "SELECT * FROM viandePoisson WHERE idViandePoisson = :idViandePoisson";
+    public static function getViandePoissonById($idViandePoisson){
 
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
 
-        $stmt = $dbh->prepare($request);
-        $stmt->bindParam(":idViandePoisson", $idViandePoisson);
-        $stmt->execute();
-        $row = $stmt->fetch();
-
-        return $row;
-    }
+        $stmt = $dbh->prepare("SELECT * FROM viandePoisson WHERE idViandePoisson = :idViandePoisson;");
+         $stmt->bindParam("idViandePoisson",$idViandePoisson);
+         $stmt->execute();
+ 
+         return $stmt->fetch();
+}
 
     
 
@@ -76,14 +71,14 @@ class ViandePoisson
         $Dao = new Dao();
         $dbh =$Dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE ViandePoisson SET (productName, typeOfMeat, animal, disappearance,) 
-        VALUES (:productName, :typeOfMeat, :animal, :disappearance);");
+        $stmt = $dbh->prepare("UPDATE viandePoisson SET productName=:productName, typeOfMeat=:typeOfMeat, animal=:animal, disappearance=:disappearance  WHERE idViandePoisson=:idViandePoisson");
+       /* VALUES (:productName, :typeOfMeat, :animal, :disappearance);");*/
        
-
        $stmt->bindParam(":productName", $this->productName);
        $stmt->bindParam(":typeOfMeat", $this->typeOfMeat);
        $stmt->bindParam(":animal", $this->animal);
        $stmt->bindParam(":disappearance", $this->disappearance);
+       $stmt->bindParam(':idViandePoisson',$this->idViandePoisson);
         
       return $stmt->execute();
     }
@@ -94,7 +89,7 @@ class ViandePoisson
     public static function deleteViandePoissonById($idViandePoisson){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM ViandePoisson WHERE idViandePoisson = :idViandePoisson;");
+        $stmt = $dbh->prepare("DELETE FROM viandePoisson WHERE idViandePoisson = :idViandePoisson;");
          $stmt->bindParam("idViandePoisson",$idViandePoisson);
          $stmt->execute();
  

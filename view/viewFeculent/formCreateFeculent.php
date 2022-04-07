@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +7,16 @@
     <title>Saisir produit</title>
 </head>
 <body>
-<a href="../../../BAndD/router/routerFeculent.php?action=all">les feculent</a>
+<a href="../../../BAndD/router/routerFeculent.php?action=all">toute les viandes poisson et oeuf</a>
 
 
     <form action="../../../BAndD/router/routerFeculent.php" method="post">
 
         <label for="productName">productName</label>
-        <input type="select" name="productName" id="productName">
+        <input type="text" name="productName" id="productName">
 
-        <label for="originPlant">typeofmeat</label>
-        <input type="text" name="originPlant" id="address">
+        <label for="originPlant">originPlant</label>
+        <input type="text" name="originPlant" id="">
 
         <label for="transform">transform</label>
         <input type="text" name="transform" id="transform">

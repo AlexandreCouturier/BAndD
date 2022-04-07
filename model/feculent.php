@@ -1,9 +1,10 @@
 <?php
-echo "fec";
+echo "viande";
 include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/dao.php");
-echo "Dans le fichier deculent avant la class " ;
+echo "apres include";
 class Feculent
 {
+    
 
     private $idFeculent;
     private $productName;
@@ -13,33 +14,21 @@ class Feculent
     
     
    
-    public function __construct($productName, $originPlant, $transform, $cooked)
+    public function __construct($productName, $originPlant, $transform, $cooked, $idFeculent=NULL)
     {
         $this->productName = $productName;
         $this->originPlant = $originPlant;
         $this->transform = $transform;
         $this->cooked = $cooked;
-        
+
     }
 
-    /*public static function getAllFeculent()
-    {
-
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
-
-        $stmt = $dbh->prepare("SELECT * FROM Feculent;");
-        $rows = $stmt->fetchAll();
-
-        return $rows;
-
-        
-    }*/
+    
     
     public static function getAllFeculent(){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM Feculent;");
+        $stmt = $dbh->prepare("SELECT * FROM feculent;");
         $stmt->execute();
         
         return $stmt->fetchAll();
@@ -47,54 +36,49 @@ class Feculent
 
     public function createFeculent()
     {
-
-        $request = "INSERT INTO Feculent (productName, originPlant, transform, cooked,) 
-            VALUES (:productName, :originPlant, :transform, :cooked)";
-
+        echo "MYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYB";
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
 
-        $stmt = $dbh->prepare($request);
+        $stmt = $dbh->prepare("INSERT INTO feculent(productName,originPlant,transform,cooked) 
+        VALUES(:un,:deu,:troi,:quatre);");
 
-        $stmt->bindParam(":productName", $this->productName);
-        $stmt->bindParam(":originPlant", $this->originPlant);
-        $stmt->bindParam(":transform", $this->transform);
-        $stmt->bindParam(":cooked", $this->cooked);
+        $stmt->bindParam(":un", $this->productName);
+        $stmt->bindParam(":deu", $this->originPlant);
+        $stmt->bindParam(":troi", $this->transform);
+        $stmt->bindParam(":quatre", $this->cooked);
    
 
-        $stmt->execute();
+        return $stmt->execute();
     }
 
-    public static function getFeculentById($idFeculent)
-    {
 
-        $request = "SELECT * FROM Feculent WHERE IdFeculent = :idFeculent";
+    public static function getFeculentById($idFeculent){
 
-        $Dao = new Dao();
-        $dbh = $Dao->getDbh();
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
 
-        $stmt = $dbh->prepare($request);
-        $stmt->bindParam(":idFeculent", $idFeculent);
-        $stmt->execute();
-        $row = $stmt->fetch();
+        $stmt = $dbh->prepare("SELECT * FROM feculent WHERE idFeculent = :idFeculent;");
+         $stmt->bindParam("idFeculent",$idFeculent);
+         $stmt->execute();
+ 
+         return $stmt->fetch();
+}
 
-        return $row;
-    }
-
-   
+    
 
     public function updateFeculent(){
         $Dao = new Dao();
         $dbh =$Dao->getDbh();
 
-        $stmt = $dbh->prepare("UPDATE Feculent SET (productName, originPlant, transform, cooked,) 
-        VALUES (:productName, :originPlant, :transform, :cooked);");
+        $stmt = $dbh->prepare("UPDATE feculent SET productName=:productName, originPlant=:originPlant, transform=:transform, cooked=:cooked  WHERE idFeculent=:idFeculent");
+       /* VALUES (:productName, :originPlant, :transform, :cooked);");*/
        
-
        $stmt->bindParam(":productName", $this->productName);
        $stmt->bindParam(":originPlant", $this->originPlant);
        $stmt->bindParam(":transform", $this->transform);
        $stmt->bindParam(":cooked", $this->cooked);
+       $stmt->bindParam(':idFeculent',$this->idFeculent);
         
       return $stmt->execute();
     }
@@ -105,7 +89,7 @@ class Feculent
     public static function deleteFeculentById($idFeculent){
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM Feculent WHERE idFeculent = :idFeculent;");
+        $stmt = $dbh->prepare("DELETE FROM feculent WHERE idFeculent = :idFeculent;");
          $stmt->bindParam("idFeculent",$idFeculent);
          $stmt->execute();
  
@@ -194,45 +178,7 @@ class Feculent
         return $this;
     }
 
-    /**
-     * Get the value of motivation
-     */ 
-    public function getMotivation()
-    {
-        return $this->motivation;
-    }
 
-    /**
-     * Set the value of motivation
-     *
-     * @return  self
-     */ 
-    public function setMotivation($motivation)
-    {
-        $this->motivation = $motivation;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of id_Job
-     */ 
-    public function getId_Job()
-    {
-        return $this->id_Job;
-    }
-
-    /**
-     * Set the value of id_Job
-     *
-     * @return  self
-     */ 
-    public function setId_Job($id_Job)
-    {
-        $this->id_Job = $id_Job;
-
-        return $this;
-    }
 
     /**
      * Get the value of idFeculent

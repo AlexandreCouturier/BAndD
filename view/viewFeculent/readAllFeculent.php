@@ -1,7 +1,3 @@
-<?php 
-
-echo "fff";
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,21 +8,17 @@ echo "fff";
 </head>
 <body>
 
+<a href="../../../BAndD/view/viewFeculent/formCreateFeculent.php">ajouter un feculent</a>
 
-<a href="./formCreateFeculent.php">ajouter un feculent</a>
-
-<?php foreach($allFeculent as $feculent): ?>
-        <p><a href="../../../BAndD/router/routerFeculent.php?action=id&id=<?=$feculent["idFeculent"] ?>">Afficher les feculent</a></p>
+<?php foreach($allFeculent as $Feculent): ?>
+        <p><a href="../../../BAndD/router/routerFeculent.php?action=id&id=<?=$Feculent['idFeculent']?>">Afficher cette ID</a></p>
         <ul>
-            <li><?= $feculent["productName"]?></li>
-            <li><?= $feculent["originPlant"]?></li>
-            <li><?= $feculent["transform"]?></li>
-            <li><?= $feculent["cooked"]?></li>
+            <li><?= $Feculent["productName"]?></li>
+            <li><?= $Feculent["originPlant"]?></li>
+            <li><?= $Feculent["transform"]?></li>
+            <li><?= $Feculent["cooked"]?></li>
         </ul>
-
     <?php endforeach ?>
-<?php 
-echo "fin";
-?>
+    
 </body>
 </html>
