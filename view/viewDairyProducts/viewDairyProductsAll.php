@@ -8,14 +8,14 @@
 </head>
 <?php echo "dans le fichier test.php" ?>
 <body>
-<a href="../view/viewDrink/formDrink.php">Formulaire Drinks</a>
+<a href="../view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
     <?php foreach($allRows as $row): ?>
     <p>Votre boisson est : </p>
         <?= $row["productName"]?> <br>
         <?= $row["animalOrPlant"]?> <br>
         <?= $row["state"]?> <br>
         <?= $row["fermentation"]?> <br>
-        <a href="../router/RouterDrink.php?action=id&idDrink=<?= $row['idDrink']?>">Afficher Produit</a>
+        <a href="../router/RouterDrink.php?action=id&idDairyProducts=<?= $row['idDairyProducts']?>">Afficher Produit</a>
 
     <?php endforeach ?>
 </body>
