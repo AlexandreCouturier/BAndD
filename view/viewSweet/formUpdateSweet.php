@@ -8,9 +8,9 @@
 </head>
 <body>
         
-    <form action="../../router/RouterSweet.php" method="POST">
+    <form action="../../../BAndD/router/RouterSweet.php" method="POST">
 
-        <input type="text" name="idSweet" value="<?=$sweet['idSweet']?>">
+        <input type="hidden" name="idSweet" value="<?=$sweet['idSweet']?>">
 
         <label for="productName">Nom de l'aliment</label>
         <input type="text" name="productName" id="productName" required value="<?=$sweet['productName']?>">

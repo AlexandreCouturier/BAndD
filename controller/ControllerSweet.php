@@ -6,7 +6,7 @@ Class ControllerSweet{
     public static function getAllSweet(){
 
      $allSweet = Sweet::getAllSweet();
-     require_once "../view/viewSweet/readAllSweet.php";
+     require_once "../../BAndD/view/viewSweet/readAllSweet.php";
 
     }
 

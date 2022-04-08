@@ -149,10 +149,10 @@ class Sweet{
         $stmt->bindParam(':productName',$this->productName);
         $stmt->bindParam(':origin',$this->origin);
         $stmt->bindParam(':processedProduct',$this->processedProduct);
-        $stmt->bindParam(':ingredientOrConsumable',$ingredientOrConsumable);
+        $stmt->bindParam(':ingredientOrConsumable',$this->ingredientOrConsumable);
         $stmt->bindParam(':coldOrHot',$this->coldOrHot);
         
-      return $stmt->execute();
+        return $stmt->execute();
 
     }
 
