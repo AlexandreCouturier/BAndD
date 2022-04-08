@@ -163,6 +163,7 @@ h5{
     text-decoration: underline;
     font-size: 1em;
     margin: 0em;
+    margin-bottom: 10px;
 }
 #drink{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
@@ -279,6 +280,42 @@ h5{
 #img_milk{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
     background-image: url("../images/vegetal_milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+p{
+    margin: 0px;
+}
+/*fat.php*/
+#img_butter{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/butter.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_oil{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/oil_olive.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_sunflower{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/sunflower.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_cream{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/creme_fraiche.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;

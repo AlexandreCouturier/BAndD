@@ -18,11 +18,9 @@
         <div class=container>
             <div id=img_cow></div>
             <div class=descriptioncat>
-            <p>Ce groupe d’aliments constitue un rôle fonctionnel et peu énergétique. 
-                Les fruits (et a minima les légumes) apportent du fructose. 
-                Ce sucre simple donne la saveur sucrée à ces aliments et équivaut énergétiquement au glucose.
-                Cependant, les fruits et les légumes sont principalement riches en eau 
-                (jusqu’à 80 à 95 % de leur poids) et en éléments que nous sommes incapables de fabriquer :</p>
+            <p>Ces aliments « bâtisseurs » ont un rôle très important pendant l’adolescence puisqu’ils participent 
+                au développement de la masse osseuse qui peut doubler pendant la puberté. 
+                Les produits laitiers sont nutritionnellement les aliments qui apportent la plus grande diversité d’éléments :</p>
             </div>
         </div>
 
@@ -30,12 +28,11 @@
 
             <div class=descriptioncat>
 
-                <h5>Fibres</h5>
-                <p>Accélèrent le transit intestinal, 
-                impliquent un effet de satiété et favorisent le développement de la flore intestinale 
-                (protection contre les agressions, réduction de l’absorption des graisses,
-                 limitation de l’augmentation du taux de sucre dans le sang...). 
-                Les fibres ont la particularité d’être le seul élément à ne pas être digéré.</p>
+                <h5>Nutriment</h5>
+                <p>- Protéines : elles sont composées d’acides aminés qui permettent la construction 
+                    et le renouvellement des organes vitaux et des tissus (particulièrement les muscles).</p>
+                <p>- Lipides : outre le fait de donner de l’énergie, les matières grasses des produits laitiers se décomposent en acides gras saturés, 
+                    acides gras mono-insaturés et acides gras poly-insaturés qui s’équilibrent entre eux.</p>
             </div>
 
                 <div id=img_cheese></div>
@@ -48,12 +45,10 @@
             <div class=descriptioncat>
 
             <h5>Minéraux</h5>
-            <p>- Potassium et sodium : régularisent la répartition de l’eau dans l’organisme.
-                - Magnésium : équilibre le système nerveux, 
-                régularise le rythme cardiaque...
-                - Calcium : construction et maintien osseux. 
-                La teneur en calcium des fruits et légumes est moindre par
-                rapport à celle des produits laitiers et celui-ci est moins bien absorbé (5 % contre 30 %).</p>
+            <p>- Calcium : constitution du squelette et des dents (développement de la masse osseuse de 7 à 8 % par an pour un adolescent), 
+                contraction musculaire... 
+                Les teneurs en calcium sont variables selon les produits.</p>
+            <p>- Phosphore : associé au calcium, il est un constituant des cellules et participe à la mise en réserve de l’énergie.</p>
             </div>
 
         </div>
@@ -63,10 +58,10 @@
             <div class=descriptioncat>
 
                 <h5>Vitamines</h5>
-                <p>- Vitamine C : stimulation du système immunitaire, assimilation du fer, 
-                action antioxydante...
-                - Vitamine B9 (acide folique) : rôle fondamental dans le métabolisme des protéines et le matériel génétique. -Béta-carotène : protection des tissus (antioxydant) et transformée dans l’organisme en vitamine A
-                (croissance, vision).</p>
+                <p>- Vitamine A : indispensable pour la croissance, la vision, le renouvellement de la peau...</p>
+                <p>- Vitamine D : permet l’utilisation du calcium par l’organisme.</p>
+                <p>- Vitamines du groupe B : elles sont multiples et leurs richesses dépendent de la quantité de matière
+                grasses.</p>
             </div>    
 
             <div id=img_milk></div>
