@@ -164,6 +164,7 @@ h5{
     font-size: 1em;
     margin: 0em;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 #drink{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
@@ -316,6 +317,48 @@ p{
 #img_cream{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
     background-image: url("../images/creme_fraiche.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+/*starches.php*/
+#img_bread{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cereal_bread.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_potatoes{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/potatoes.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_rice{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/rice.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+/*sugar.php*/
+#img_cup{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cup_cake.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_bonbon{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/bonbon.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
