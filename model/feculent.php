@@ -36,7 +36,7 @@ class Feculent
 
     public function createFeculent()
     {
-        echo "MYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYB";
+        echo "MYYYYYYYooooooooooooooooooooooYYYYYYYYYYYYYYYB";
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
 
@@ -55,7 +55,7 @@ class Feculent
 
     public static function getFeculentById($idFeculent){
 
-        $dao = new DAO();
+        $dao = new Dao();
         $dbh = $dao->getDbh();
 
         $stmt = $dbh->prepare("SELECT * FROM feculent WHERE idFeculent = :idFeculent;");
@@ -63,7 +63,7 @@ class Feculent
          $stmt->execute();
  
          return $stmt->fetch();
-}
+    }
 
     
 

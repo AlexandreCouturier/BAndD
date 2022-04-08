@@ -31,7 +31,7 @@ echo "ok ok oko";
 
         ControllerFeculent::create($_POST);
     }
-    echo "voialalala ";
+   
 }
 echo "eeeeeeeeee";
 ?>

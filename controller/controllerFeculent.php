@@ -1,6 +1,6 @@
 <?php
 echo "contr";
-include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/Feculent.php");
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/feculent.php");
 echo "dans la class controllerdeculent avant la class";
 class ControllerFeculent{
 
@@ -21,8 +21,8 @@ class ControllerFeculent{
 
     public static function create($post){
         
-        $Feculent = new Feculent($post['productName'], $post['typeOfMeat'], 
-        $post['animal'], $post['disappearance']);
+        $Feculent = new Feculent($post['productName'], $post['originPlant'], 
+        $post['transform'], $post['cooked']);
         $Feculent->createFeculent();
         self::getAll();
 
@@ -30,8 +30,8 @@ class ControllerFeculent{
 
     public static function update($post){
         
-        $Feculent = new Feculent($post['productName'], $post['typeOfMeat'], 
-        $post['animal'], $post['disappearance']);
+        $Feculent = new Feculent($post['productName'], $post['originPlant'], 
+        $post['transform'], $post['cooked']);
         $Feculent->setidFeculent($post["id"]);
         $Feculent->updateFeculent();
       
