@@ -9,7 +9,8 @@ class DairyProducts {
     private $state;
     private $fermentation;
 
-    public function __construct($productName, $animalOrPlant, $state, $fermentation, $idDairyProducts = NULL){
+    public function __construct($productName, $animalOrPlant, $state, $fermentation, $idDairyProducts = NULL)
+    {
         $this->productName = $productName;
         $this->animalOrPlant = $animalOrPlant;
         $this->state = $state;
@@ -17,31 +18,11 @@ class DairyProducts {
         $this->idDairyProducts = $idDairyProducts;
     }
 
-    public function createDairyProducts(){
-        echo "dans la fonction createDrink";
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
-       
-       $stmt = $dbh->prepare("INSERT INTO dairyProducts (productName, animalOrPlant, state, fermentation) VALUES (:un, :deux, :trois, :quatre);");
-       
-       $stmt->bindParam(':un', $this->productName);
-        $stmt->bindParam(':deux', $this->animalOrPlant);
-        $stmt->bindParam(':trois', $this->state);
-        $stmt->bindParam(':trois', $this->fermentation);
-        $stmt->execute();
-    }
 
-    public static function getAllDairyProducts(){
-        $dao = new DAO();
-        $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("SELECT * FROM dairyProducts;");
-        $stmt->execute();
-        $allRows = $stmt->fetchAll();
-        
-        return $allRows;
-    }
 
-        public static function getDairyProductsById($idDairyProducts){
+
+    public static function getDairyProductsById($idDairyProducts)
+    {
         $dao = new DAO();
         $dbh = $dao->getDbh();
         
@@ -79,4 +60,30 @@ class DairyProducts {
          
     }
 
+    public static function getAllDairyProducts(){
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
+        $stmt = $dbh->prepare("SELECT * FROM dairyProducts;");
+        $stmt->execute();
+        $allRows = $stmt->fetchAll();
+        
+        return $allRows;
+    }
+
+    public function createDairyProducts(){
+        echo "dans la fonction createDrink";
+        $dao = new DAO();
+        $dbh = $dao->getDbh();
+       
+       $stmt = $dbh->prepare("INSERT INTO dairyProducts (productName, animalOrPlant, state, fermentation) VALUES (:un, :deux, :trois, :quatre);");
+       
+       $stmt->bindParam(':un', $this->productName);
+        $stmt->bindParam(':deux', $this->animalOrPlant);
+        $stmt->bindParam(':trois', $this->state);
+        $stmt->bindParam(':trois', $this->fermentation);
+        $stmt->execute();
+    }
+
 }
+
+?>

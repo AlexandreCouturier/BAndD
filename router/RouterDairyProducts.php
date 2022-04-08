@@ -30,3 +30,4 @@ if(isset($_GET["action"])){
         ControllerDairyProducts::createDairyProducts($_POST);
     }
 }
+?>

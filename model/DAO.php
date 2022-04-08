@@ -34,4 +34,6 @@ class DAO{
         return $this->dbh;
     }
 }
+$co = new DAO();
+$co->getDbh();
 ?>

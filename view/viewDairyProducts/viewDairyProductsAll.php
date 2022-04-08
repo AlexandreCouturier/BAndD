@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,20 @@
     <title>Document</title>
 </head>
 <?php echo "dans le fichier test.php" ?>
+
 <body>
-<a href="../../view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
-    <?php foreach($allRows as $row): ?>
-    <p>Votre boisson est : </p>
+    <a href="../../../BAndD/view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
+    <?php foreach ($allRows as $row) : ?>
+        <p>Votre boisson est : </p>
+        <?php echo "dhd"; ?>
         <?= $row["productName"]?> <br>
         <?= $row["animalOrPlant"]?> <br>
         <?= $row["state"]?> <br>
         <?= $row["fermentation"]?> <br>
-        <a href="../router/RouterDrink.php?action=id&idDairyProducts=<?= $row['idDairyProducts']?>">Afficher Produit</a>
+        <a href="../router/RouterDrink.php?action=id&idDairyProducts=<?= $row['idDairyProducts'] ?>">Afficher Produit</a>
 
     <?php endforeach ?>
+    <?php echo "dddd"; ?>
 </body>
+
 </html>
