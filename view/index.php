@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BandD</title>
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
         <section class="bouche">
           <aside>
             <figure class="gauche">
-              <img id="dent" src="./image/dent.png" alt="une dent">
+              <img id="dent" src="./image/index/dent.png" alt="une dent">
             </figure>
           </aside>
           <article>
@@ -73,14 +73,14 @@
           </article>
           <aside>
             <figure class="droite">
-              <img id="estomac" src="./image/estomac.png" alt="l'estomac">
+              <img id="estomac" src="./image/index/estomac.png" alt="l'estomac">
             </figure>
           </aside>
         </section>
         <section class="intestin">
           <aside>
             <figure class="gauche">
-              <img id="intestin" src="./image/intestin.png" alt="l'intestin">
+              <img id="intestin" src="./image/index/intestin.png" alt="l'intestin">
             </figure>
           </aside>
           <article>
@@ -112,14 +112,14 @@
           </article>
           <aside>
             <figure class="droite">
-              <img id="foie" src="./image/foie.png" alt="le foie">
+              <img id="foie" src="./image/index/foie.png" alt="le foie">
             </figure>
           </aside>
         </section>
         <section class="colon">
           <aside>
             <figure class="gauche">
-              <img id="colon" src="./image/colon.png" alt="le colon">
+              <img id="colon" src="./image/index/colon.png" alt="le colon">
             </figure>
           </aside>
           <article>
@@ -146,8 +146,8 @@
       <div class="troisParties">
         <aside>
           <figure>
-            <img src="./image/viandes.png" alt="viandes">
-            <img src="./image/pain.png" alt="pain">
+            <img src="./image/index/viandes.png" alt="viandes">
+            <img src="./image/index/pain.png" alt="pain">
           </figure>
         </aside>
         <article>
@@ -203,8 +203,8 @@
         </article>
         <aside>
           <figure>
-            <img src="./image/poissons.png" alt="poissons">
-            <img src="./image/patates.png" alt="patates">
+            <img src="./image/index/poissons.png" alt="poissons">
+            <img src="./image/index/patates.png" alt="patates">
           </figure>
         </aside>
       </div>

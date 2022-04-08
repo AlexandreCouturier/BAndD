@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BandD associations</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <div class="troisParties">
                 <aside>
                     <figure class="gauche">
-                        <img id="fillette" src="./image/fillette.png" alt="fillette">
+                        <img id="fillette" src="./image/association/fillette.png" alt="fillette">
                     </figure>
                 </aside>
                 <div>
@@ -133,7 +133,7 @@
                 </div>
                 <aside>
                     <figure class="droite">
-                        <img id="garçon" src="./image/garÃ§on.png" alt="garçon">
+                        <img id="garçon" src="./image/association/garÃ§on.png" alt="garçon">
 
                     </figure>
                 </aside>
@@ -168,7 +168,7 @@
                 </div>
                 <aside>
                     <figure>
-                        <img id="malAuVentre" src="./image/malAuVentre.png" alt="mal Au Ventre">
+                        <img id="malAuVentre" src="./image/association/malAuVentre.png" alt="mal Au Ventre">
                     </figure>
                 </aside>
             </div>
@@ -180,7 +180,7 @@
                     Bien sûr notre vie sociale ne nous permet pas toujours de respecter ces <span class="texteOrange">associations</span> alimentaires. Je vous conseille ainsi de
                     suivre la règle des <span class="texteOrange gras">80/20</span>, soit 80% de protéines fortes et 20% d’amidons forts ou le contraire
                     N’oublions pas que <span class="texteOrange">simplifier</span> les apports alimentaires au cours d’un seul et même repas est un gage de bonne digestion et
-                        d’une bonne santé !
+                    d’une bonne santé !
                 </p>
             </article>
         </section>

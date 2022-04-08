@@ -140,7 +140,7 @@ figure.droite{
     width: 80%;
 }
 .motDeLaFaim{
-    background: url('../image/motDeLaFaim.png');
+    background: url('../image/association/motDeLaFaim.png');
     background-size: cover;
     width: 80%;
     height: 700px;
@@ -204,3 +204,4 @@ figure.droite{
         flex-wrap: wrap;
     }
 }
+/*-------------------------------------MEAT--------------------------------------*/
