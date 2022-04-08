@@ -36,7 +36,7 @@ class Feculent
 
     public function createFeculent()
     {
-        echo "MYYYYYYYooooooooooooooooooooooYYYYYYYYYYYYYYYB";
+        echo "MYYYYYYYooYYYYYB";
         $Dao = new Dao();
         $dbh = $Dao->getDbh();
 

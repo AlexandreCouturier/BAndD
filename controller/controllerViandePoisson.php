@@ -6,9 +6,8 @@ class ControllerViandePoisson{
 
     public static function getAll(){
         
-
-      $allViandePoisson = ViandePoisson::getAllViandePoisson();
-     include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewViandePoisson/readAllViandePoisson.php");
+        $allViandePoisson = ViandePoisson::getAllViandePoisson();
+        include($_SERVER['DOCUMENT_ROOT']."/BAndD/view/viewViandePoisson/readAllViandePoisson.php");
 
     }
 
