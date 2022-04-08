@@ -8,8 +8,6 @@
     <title>ViandePoisson</title>
 </head>
 <body>
-<a href="../../../BAndD/router/routerViandePoisson.php">les Viande,Poisson</a>
-
     <ul>
         <li><?=$ViandePoisson["productName"]?></li>
         <li><?=$ViandePoisson["typeOfMeat"]?></li>

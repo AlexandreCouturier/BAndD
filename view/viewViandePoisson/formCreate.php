@@ -13,16 +13,23 @@
     <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
 
         <label for="productName">productName</label>
-        <input type="text" name="productName" id="productName">
+        <input type="text" name="productName" id="productName" required>
 
         <label for="TypeOfMeat">typeofmeat</label>
-        <input type="text" name="typeOfMeat" id="">
+        <input type="text" name="typeOfMeat" id="" required>
 
         <label for="animal">animal</label>
-        <input type="text" name="animal" id="animal">
+        <input type="text" name="animal" id="animal" required>
 
-        <label for="disappearance">disapear</label>
-        <input type="text" name="disappearance" id="disappearance">
+        <p>Disparition</p>
+        <div>
+        <label for="disappearance">oui</label>
+        <input type="radio" name="disappearance" id="disappearance" value="oui" required>
+        </div>
+        <div>
+        <label for="disappearance">non</label>
+        <input type="radio" name="disappearance" id="disappearance" value="non" required>
+        </div>
 
         <input type="submit" value="envoyer" name="submit">
     </form>

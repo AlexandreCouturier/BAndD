@@ -14,19 +14,26 @@
 
     <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
 
-        <input type="hidden" name="id" value="<?=$ViandePoisson['idViandePoisson']?>">
+        <input type="hidden" name="id"  value="<?=$ViandePoisson['idViandePoisson']?>">
 
         <label for = "productName"> name </label>
-        <input type = "text" name = "productName" id = "productName" required value="<?=$ViandePoisson['productName']?>"> <br>
+        <input type = "text" name = "productName" id = "productName"  value="<?=$ViandePoisson['productName']?>"> <br>
 
         <label for = "typeOfMeat"> type de viande </label> 
-        <input type = "text" name = "typeOfMeat" id = "typeOfMeat" value="<?=$ViandePoisson['typeOfMeat']?>" required> <br>
+        <input type = "text" name = "typeOfMeat" id = "typeOfMeat" value="<?=$ViandePoisson['typeOfMeat']?>"> <br>
 
         <label for = "animal"> animale </label> 
-        <input type = "text" name = "animal" id = "animal" value="<?=$ViandePoisson['animal']?>" required> <br>
+        <input type = "text" name = "animal" id = "animal" value="<?=$ViandePoisson['animal']?>" > <br>
 
-        <label for = "disappearance"> disparition </label>
-        <input type = "text" name = "disappearance" id = "disappearance" value="<?=$ViandePoisson['disappearance']?>"> <br>
+        <p>disparition</p>
+        <div>
+        <label for = "disappearance">oui</label>
+        <input type = "radio" name = "disappearance" id = "disappearance"  value="<?=$ViandePoisson['disappearance']?>"> <br>
+        </div>
+        <div>
+        <label for = "disappearance">non</label>
+        <input type = "radio" name = "disappearance" id = "disappearance"  value="<?=$ViandePoisson['disappearance']?>"> <br>
+        </div>
 
         <label for="Envoyer"></label>
         <input type="submit" name="submit"  value="Envoyer">

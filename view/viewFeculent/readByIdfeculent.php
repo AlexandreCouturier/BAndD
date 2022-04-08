@@ -8,7 +8,6 @@
     <title>Feculent</title>
 </head>
 <body>
-<a href="../../../BAndD/router/routerFeculent.php">les Viande,Poisson</a>
 
     <ul>
         <li><?=$Feculent["productName"]?></li>
