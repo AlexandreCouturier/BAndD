@@ -9,6 +9,7 @@
 <body>
 
 <a href="../../../BAndD/view/viewViandePoisson/formCreate.php">ajouter une viande,poisson ou oeuf</a>
+<a href="../../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
 
 <?php foreach($allViandePoisson as $ViandePoisson): ?>
         <p><a href="../../../BAndD/router/routerViandePoisson.php?action=id&id=<?=$ViandePoisson['idViandePoisson']?>">Afficher cette ID</a></p>

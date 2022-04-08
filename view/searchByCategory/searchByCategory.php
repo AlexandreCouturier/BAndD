@@ -20,8 +20,8 @@
                 <option value="3">Ajouter un produit sucré</option>
                 <option value="4">Ajouter une boisson</option>
                 <option value="5">Ajouter un produit laitier</option>
-                <option value="6">Ajouter une boisson</option>
-                <option value="7">Ajouter une boisson</option>
+                <option value="6">Ajouter un feculent</option>
+                <option value="7">Ajouter une viande, poisson ou oeuf</option>
                 
             </select>
         </form>

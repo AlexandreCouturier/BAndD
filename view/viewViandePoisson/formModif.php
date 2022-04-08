@@ -28,11 +28,11 @@
         <p>disparition</p>
         <div>
         <label for = "disappearance">oui</label>
-        <input type = "radio" name = "disappearance" id = "disappearance"  value="<?=$ViandePoisson['disappearance']?>"> <br>
+        <input type = "radio" name = "disappearance" id = "disappearance"  value="oui"> <br>
         </div>
         <div>
         <label for = "disappearance">non</label>
-        <input type = "radio" name = "disappearance" id = "disappearance"  value="<?=$ViandePoisson['disappearance']?>"> <br>
+        <input type = "radio" name = "disappearance" id = "disappearance"  value="non"> <br>
         </div>
 
         <label for="Envoyer"></label>

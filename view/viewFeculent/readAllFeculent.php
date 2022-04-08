@@ -9,6 +9,7 @@
 <body>
 
 <a href="../../../BAndD/view/viewFeculent/formCreateFeculent.php">AJOUTEZ UN FECULENT</a>
+<a href="../../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
 
 <?php foreach($allFeculent as $Feculent): ?>
         <p><a href="../../../BAndD/router/routerFeculent.php?action=id&id=<?=$Feculent['idFeculent']?>">Afficher cette ID</a></p>

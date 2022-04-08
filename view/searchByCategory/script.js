@@ -14,9 +14,17 @@ const select = document.getElementById('choix');
                         changeURL('../viewSweet/formSweet.php');
                         break;
                     case 4: 
-                        changeURL('../viewDrink/formDrink.php')
+                        changeURL('../viewDrink/formDrink.php');
+                        break;
                     case 5: 
-                        changeURL('../viewDairyProducts/formDairyProducts.php')
+                        changeURL('../viewDairyProducts/formDairyProducts.php');
+                        break;
+                    case 6: 
+                        changeURL('../viewFeculent/formCreateFeculent.php');
+                        break;
+                    case 7: 
+                        changeURL('../viewViandePoisson/formCreate.php');
+                        break;
                     default:
                         console.log('default');
                 }

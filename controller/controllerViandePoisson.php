@@ -1,6 +1,6 @@
 <?php
 echo "contr";
-include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/ViandePoisson.php");
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/viandePoisson.php");
 echo "dans la class controllerdeculent avant la class";
 class ControllerViandePoisson{
 

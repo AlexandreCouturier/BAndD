@@ -25,23 +25,23 @@
         <p>Transformé</p>
         <div>
         <label for = "transform">oui</label> 
-        <input type = "radio" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" > <br>
+        <input type = "radio" name = "transform" id = "transform" value="oui" > <br>
         </div>
 
         <div>
         <label for = "transform">non</label> 
-        <input type = "radio" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" > <br>
+        <input type = "radio" name = "transform" id = "transform" value="non" > <br>
         </div>
 
 
         <p>Préparer</p>
         <div>
         <label for = "cooked">oui</label>
-        <input type = "radio" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>" > <br>
+        <input type = "radio" name = "cooked" id = "cooked" value="oui" > <br>
         </div>
         <div>
         <label for = "cooked">non</label>
-        <input type = "radio" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>" > <br>
+        <input type = "radio" name = "cooked" id = "cooked" value="non" > <br>
         </div>
 
         <label for="Envoyer"></label>

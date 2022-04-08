@@ -1,6 +1,6 @@
 <?php
 echo "viande";
-include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/dao.php");
+include($_SERVER['DOCUMENT_ROOT']."/BAndD/model/DAO.php");
 echo "apres include";
 class ViandePoisson
 {
