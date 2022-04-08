@@ -52,7 +52,7 @@ class DairyProducts {
     public static function deleteDairyProductsById($idDairyProducts){
         $dao = new DAO();
         $dbh = $dao->getDbh();
-        $stmt = $dbh->prepare("DELETE FROM drink WHERE idDairyProducts = :idDairyProducts;");
+        $stmt = $dbh->prepare("DELETE FROM dairyProducts WHERE idDairyProducts = :idDairyProducts;");
          $stmt->bindParam("idDairyProducts",$idDairyProducts);
          $stmt->execute();
  
@@ -62,10 +62,15 @@ class DairyProducts {
 
     public static function getAllDairyProducts(){
         $dao = new DAO();
+        echo "Dans la DAO de fonction get All ";
         $dbh = $dao->getDbh();
+        echo "Dans DBH de fonction get All ";
         $stmt = $dbh->prepare("SELECT * FROM dairyProducts;");
+        echo "Dans stmt de fonction get All ";
         $stmt->execute();
+        echo "Dans l'execute de fonction get All ";
         $allRows = $stmt->fetchAll();
+        echo "Dans la DAO de fonction get All ";
         
         return $allRows;
     }
@@ -73,14 +78,19 @@ class DairyProducts {
     public function createDairyProducts(){
         echo "dans la fonction createDrink";
         $dao = new DAO();
+        echo "Dans la DAO de fonction create ";
         $dbh = $dao->getDbh();
-       
+        echo "Dans dbh de fonction create ";
        $stmt = $dbh->prepare("INSERT INTO dairyProducts (productName, animalOrPlant, state, fermentation) VALUES (:un, :deux, :trois, :quatre);");
-       
-       $stmt->bindParam(':un', $this->productName);
+       echo "Dans la stmt de fonction create ";
+        $stmt->bindParam(':un', $this->productName);
         $stmt->bindParam(':deux', $this->animalOrPlant);
         $stmt->bindParam(':trois', $this->state);
-        $stmt->bindParam(':trois', $this->fermentation);
+        $stmt->bindParam(':quatre', $this->fermentation);
+        var_dump($this->productName);
+        var_dump($this->animalOrPlant);
+        var_dump($this->state);
+        var_dump($this->fermentation);
         $stmt->execute();
     }
 
