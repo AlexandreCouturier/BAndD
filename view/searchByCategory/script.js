@@ -10,9 +10,9 @@ const select = document.getElementById('choix');
                     case 2:
                         changeURL('../viewOilyMaterial/formOilyMaterial');
                         break;
-                   /* case 3:
-                        changeURL('http://google.com');
-                        break;*/
+                    case 3:
+                        changeURL('../viewSweet/formSweet');
+                        break;
                     default:
                         console.log('default');
                 }

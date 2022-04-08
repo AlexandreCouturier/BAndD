@@ -12,37 +12,37 @@ Class ControllerSweet{
 
     public static function getSweetById($idSweet){
         
-        $Sweet = Sweet::getSweetById($idSweet);
+        $sweet = Sweet::getSweetById($idSweet);
         require_once "../view/viewSweet/readSweetById.php";
 
     }
 
     public static function createSweet($post){
         
-        $Sweet = new Sweet($post['productName'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable'], $post['coldOrHot']);
-        $Sweet->createSweet();
+        $sweet = new Sweet($post['productName'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable'], $post['coldOrHot']);
+        $sweet->createSweet();
 
         self::getAllSweet();
 
     }
 
     public static function getFormUpdate($idSweet){
-        $Sweet = Sweet::getFormUpdate($idSweet);
-        var_dump($Sweet);
+        $sweet = Sweet::getFormUpdate($idSweet);
+        var_dump($sweet);
         require "../view/viewSweet/formUpdateSweet.php";
     }
 
     public static function updateSweet($post){
         echo "hshshshshshshshs";
-        $Sweet = new Sweet($post['productName'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable'], $post['coldOrHot'],$post['idSweet']);
-        $Sweet->updateSweet();
+        $sweet = new Sweet($post['productName'], $post['origin'], $post['processedProduct'], $post['ingredientOrConsumable'], $post['coldOrHot'],$post['idSweet']);
+        $sweet->updateSweet();
       
         self::getAllSweet();
     }
 
     public static function deleteSweetById($idSweet){
 
-        $Sweet = Sweet::deleteSweetById($idSweet);
+        $sweet = Sweet::deleteSweetById($idSweet);
     
         self::getAllSweet();
 

@@ -25,7 +25,7 @@
             <option value="umami">Umami</option>
         </select>
 
-        <label for="coldOrHot">Produit naturel ou transformé :</label>
+        <label for="coldOrHot">Consommable chaud ou froid </label>
         <select name="coldOrHot" id="coldOrHot" required>
             <option value="hot">Chaud</option>
             <option value="cold">Froid</option>
