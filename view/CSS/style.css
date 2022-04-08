@@ -207,33 +207,33 @@ h5{
     width: 702px;
 }
 /*meat.php*/
-#img_meat{
+#img_fruit{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../images/beef_steak.jpeg");
+    background-image: url("../images/fruit.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
     height: 300px;
 }
-#img_fish{
+#img_vegetable{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../images/fish.jpeg");
+    background-image: url("../images/vegetables.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
     height: 300px;
 }
-#img_eggs{
+#img_fruit2{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../images/eggs.jpeg");
+    background-image: url("../images/fruits2.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
     height: 300px;
 }
-#img_legume{
+#img_vegetable2{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../images/legumineuse.jpeg");
+    background-image: url("../images/vegetables2.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;

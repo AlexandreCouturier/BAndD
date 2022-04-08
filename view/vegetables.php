@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Viandes & Poissons...</title>
+    <title>Fruits & Légumes</title>
 </head>
 <body>
 
@@ -13,35 +13,71 @@
         require_once "../model/Header.php"
     ?>
     <div class=contenu>
-        <h2>Viandes, Poissons, Oeufs & Légumineuses</h2>
+        <h2>Fruits & Légumes</h2>
 
         <div class=descriptiondetail>
-            <div id=img_meat></div>
-            <p>Ces aliments sont principalement recommandés pour leur richesse en protéines. La quantité de protéines apportée par la viande, le poisson ou les œufs est similaire. Par contre leurs teneurs en lipides, vitamines et minéraux sont très variables et sont fonction de l’animal et des morceaux cuisinés. C’est pourquoi nous conseillons de varier au maximum l’origine de ces aliments.</p>
+            <div id=img_fruit></div>
+            <div class=descriptioncat>
+            <p>Ce groupe d’aliments constitue un rôle fonctionnel et peu énergétique. 
+                Les fruits (et a minima les légumes) apportent du fructose. 
+                Ce sucre simple donne la saveur sucrée à ces aliments et équivaut énergétiquement au glucose.
+                Cependant, les fruits et les légumes sont principalement riches en eau 
+                (jusqu’à 80 à 95 % de leur poids) et en éléments que nous sommes incapables de fabriquer :</p>
+            </div>
         </div>
 
         <div class=descriptiondetail>
-            <h5>Nutriments</h5>
-            <p>- Protéines : elles sont composées d’acides aminés qui permettent la construction et le renouvellement des organes vitaux et des tissus (particulièrement les muscles).
-                - Lipides (matières grasses) : apportent de l’énergie mais leurs quantités et qualités sont très variables selon l’origine de l’animal.</p>
-            <div id=img_fish></div>
+
+            <div class=descriptioncat>
+
+                <h5>Fibres</h5>
+                <p>Accélèrent le transit intestinal, 
+                impliquent un effet de satiété et favorisent le développement de la flore intestinale 
+                (protection contre les agressions, réduction de l’absorption des graisses,
+                 limitation de l’augmentation du taux de sucre dans le sang...). 
+                Les fibres ont la particularité d’être le seul élément à ne pas être digéré.</p>
+            </div>
+
+                <div id=img_vegetable></div>
         </div>
 
         <div class=descriptiondetail>
-            <div id=img_eggs></div>
+
+            <div id=img_fruit2></div>
+
+            <div class=descriptioncat>
+
             <h5>Minéraux</h5>
-            <p>- Fer : fabrication d’éléments (hémoglobine et myoglobine) qui permettent le transport et le stockage de l’oxygène. Le fer d’origine animale est plus assimilable (x 2,5) par l’organisme que le fer d’origine végétale.
-                - Zinc : renforce le fonctionnement du système immunitaire et rôle antioxydant (protection contre le vieillissement).
-                - Sélénium : rôle antioxydant (protection contre le vieillissement)</p>
+            <p>- Potassium et sodium : régularisent la répartition de l’eau dans l’organisme.
+                - Magnésium : équilibre le système nerveux, 
+                régularise le rythme cardiaque...
+                - Calcium : construction et maintien osseux. 
+                La teneur en calcium des fruits et légumes est moindre par
+                rapport à celle des produits laitiers et celui-ci est moins bien absorbé (5 % contre 30 %).</p>
+            </div>
+
         </div>
 
         <div class=descriptiondetail>
-            <h5>Vitamines</h5>
-            <p>- Vitamines du groupe B : elles sont multiples et leurs richesses dépendent de la quantité de matières grasses.
-                - Vitamine E : antioxydante (protection des tissus).
-                - Vitamine K : intervient dans la coagulation du sang.</p>
-            <div id=img_legume></div>
+
+            <div class=descriptioncat>
+
+                <h5>Vitamines</h5>
+                <p>- Vitamine C : stimulation du système immunitaire, assimilation du fer, 
+                action antioxydante...
+                - Vitamine B9 (acide folique) : rôle fondamental dans le métabolisme des protéines et le matériel génétique. -Béta-carotène : protection des tissus (antioxydant) et transformée dans l’organisme en vitamine A
+                (croissance, vision).</p>
+            </div>    
+
+            <div id=img_vegetable2></div>
+            
         </div>
+
+        <div class=descriptiondetail>
+            <p>Une consommation variée, régulière de fruits et légumes permettra de répondre aux besoins en fibres, vitami-
+            nes et minéraux. Le respect de la saisonnalité optimisera la qualité des fruits et légumes.</p> 
+        </div>
+
     </div>
     
 </body>
