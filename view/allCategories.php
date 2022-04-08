@@ -12,7 +12,7 @@
     <?php
         require_once "../model/Header.php"
     ?>
-    <div id=contenu>
+    <div class=contenu>
         <div class=category>
                 <div class=container>
                     <div id=boisson>
