@@ -137,8 +137,6 @@ h3{
     align-items:center;
     width: 1074px;
     height: 300px;
-    left: 149px;
-    top: 517px;
 }
 .description{
     display: flex;
@@ -206,7 +204,7 @@ h5{
     flex-direction: column;
     width: 702px;
 }
-/*meat.php*/
+/*vegetables.php*/
 #img_fruit{
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
     background-image: url("../images/fruit.jpeg");
@@ -237,5 +235,19 @@ h5{
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
+    height: 300px;
+}
+#img_vegetable3{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetables3.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+.conclusion{
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
     height: 300px;
 }

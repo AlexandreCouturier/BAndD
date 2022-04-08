@@ -15,7 +15,7 @@
     <div class=contenu>
         <h2>Fruits & Légumes</h2>
 
-        <div class=descriptiondetail>
+        <div class=container>
             <div id=img_fruit></div>
             <div class=descriptioncat>
             <p>Ce groupe d’aliments constitue un rôle fonctionnel et peu énergétique. 
@@ -26,7 +26,7 @@
             </div>
         </div>
 
-        <div class=descriptiondetail>
+        <div class=container>
 
             <div class=descriptioncat>
 
@@ -41,7 +41,7 @@
                 <div id=img_vegetable></div>
         </div>
 
-        <div class=descriptiondetail>
+        <div class=container>
 
             <div id=img_fruit2></div>
 
@@ -58,7 +58,7 @@
 
         </div>
 
-        <div class=descriptiondetail>
+        <div class=container>
 
             <div class=descriptioncat>
 
@@ -70,12 +70,18 @@
             </div>    
 
             <div id=img_vegetable2></div>
-            
-        </div>
 
-        <div class=descriptiondetail>
-            <p>Une consommation variée, régulière de fruits et légumes permettra de répondre aux besoins en fibres, vitami-
-            nes et minéraux. Le respect de la saisonnalité optimisera la qualité des fruits et légumes.</p> 
+        </div>
+        <div class=container>
+
+            <div id=img_vegetable3></div>
+
+            <div class=descriptioncat>
+                <h5>Minéraux</h5>
+                <p>Une consommation variée, régulière de fruits et légumes permettra de répondre aux besoins en fibres, vitami-
+                nes et minéraux. Le respect de la saisonnalité optimisera la qualité des fruits et légumes.</p>
+            </div>
+
         </div>
 
     </div>
