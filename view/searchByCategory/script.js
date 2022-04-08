@@ -8,10 +8,10 @@ const select = document.getElementById('choix');
                         changeURL('../viewFruitAndVegetable/formFruitAndVegetable.php');
                         break;
                     case 2:
-                        changeURL('../viewOilyMaterial/formOilyMaterial');
+                        changeURL('../viewOilyMaterial/formOilyMaterial.php');
                         break;
                     case 3:
-                        changeURL('../viewSweet/formSweet');
+                        changeURL('../viewSweet/formSweet.php');
                         break;
                     default:
                         console.log('default');
