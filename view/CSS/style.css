@@ -140,7 +140,7 @@ figure.droite{
     width: 80%;
 }
 .motDeLaFaim{
-    background: url('../image/association/motDeLaFaim.png');
+    background: url('../images/association/motDeLaFaim.png');
     background-size: cover;
     width: 80%;
     height: 700px;
@@ -207,7 +207,7 @@ figure.droite{
 /*-------------------------------------MEAT--------------------------------------*/
 #img_meat {
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../image/meat/beef_steak.jpeg");
+    background-image: url("../images/meat/beef_steak.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
@@ -217,7 +217,7 @@ figure.droite{
 
 #img_fish {
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../image/meat/fish.jpeg");
+    background-image: url("../images/meat/fish.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
@@ -226,7 +226,7 @@ figure.droite{
 
 #img_eggs {
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../image/meat/eggs.jpeg");
+    background-image: url("../images/meat/eggs.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;
@@ -235,7 +235,7 @@ figure.droite{
 
 #img_legume {
     box-shadow: inset 0px 0px 40px 35px #FFFFFF;
-    background-image: url("../image/meat/legumineuse.jpeg");
+    background-image: url("../images/meat/legumineuse.jpeg");
     background-size: cover;
     border-radius: 146.5px;
     width: 300px;

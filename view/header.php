@@ -1,6 +1,6 @@
 
 <header>
-  <img src="./image/logo.svg" alt="logo" id="logo" />
+  <img src="./images/logo.svg" alt="logo" id="logo" />
   <nav>
     <ul class="nav">
       <a href="./index.php"><li>Accueil</li></a>

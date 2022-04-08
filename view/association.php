@@ -22,7 +22,7 @@
             <div class="troisParties">
                 <aside>
                     <figure class="gauche">
-                        <img id="fillette" src="./image/association/fillette.png" alt="fillette">
+                        <img id="fillette" src="./images/association/fillette.png" alt="fillette">
                     </figure>
                 </aside>
                 <div>
@@ -133,7 +133,7 @@
                 </div>
                 <aside>
                     <figure class="droite">
-                        <img id="garçon" src="./image/association/garÃ§on.png" alt="garçon">
+                        <img id="garçon" src="./images/association/garÃ§on.png" alt="garçon">
 
                     </figure>
                 </aside>
@@ -168,7 +168,7 @@
                 </div>
                 <aside>
                     <figure>
-                        <img id="malAuVentre" src="./image/association/malAuVentre.png" alt="mal Au Ventre">
+                        <img id="malAuVentre" src="./images/association/malAuVentre.png" alt="mal Au Ventre">
                     </figure>
                 </aside>
             </div>

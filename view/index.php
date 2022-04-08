@@ -45,7 +45,7 @@
         <section class="bouche">
           <aside>
             <figure class="gauche">
-              <img id="dent" src="./image/index/dent.png" alt="une dent">
+              <img id="dent" src="./images/index/dent.png" alt="une dent">
             </figure>
           </aside>
           <article>
@@ -73,14 +73,14 @@
           </article>
           <aside>
             <figure class="droite">
-              <img id="estomac" src="./image/index/estomac.png" alt="l'estomac">
+              <img id="estomac" src="./images/index/estomac.png" alt="l'estomac">
             </figure>
           </aside>
         </section>
         <section class="intestin">
           <aside>
             <figure class="gauche">
-              <img id="intestin" src="./image/index/intestin.png" alt="l'intestin">
+              <img id="intestin" src="./images/index/intestin.png" alt="l'intestin">
             </figure>
           </aside>
           <article>
@@ -112,14 +112,14 @@
           </article>
           <aside>
             <figure class="droite">
-              <img id="foie" src="./image/index/foie.png" alt="le foie">
+              <img id="foie" src="./images/index/foie.png" alt="le foie">
             </figure>
           </aside>
         </section>
         <section class="colon">
           <aside>
             <figure class="gauche">
-              <img id="colon" src="./image/index/colon.png" alt="le colon">
+              <img id="colon" src="./images/index/colon.png" alt="le colon">
             </figure>
           </aside>
           <article>
@@ -146,8 +146,8 @@
       <div class="troisParties">
         <aside>
           <figure>
-            <img src="./image/index/viandes.png" alt="viandes">
-            <img src="./image/index/pain.png" alt="pain">
+            <img src="./images/index/viandes.png" alt="viandes">
+            <img src="./images/index/pain.png" alt="pain">
           </figure>
         </aside>
         <article>
@@ -203,8 +203,8 @@
         </article>
         <aside>
           <figure>
-            <img src="./image/index/poissons.png" alt="poissons">
-            <img src="./image/index/patates.png" alt="patates">
+            <img src="./images/index/poissons.png" alt="poissons">
+            <img src="./images/index/patates.png" alt="patates">
           </figure>
         </aside>
       </div>
