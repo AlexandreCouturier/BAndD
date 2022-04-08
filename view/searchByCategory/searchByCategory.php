@@ -17,7 +17,7 @@
                 <option value="0" style="display: none;" selected>Choissisez... </option>
                 <option value="1">Ajouter un fruit ou un légumes</option>
                 <option value="2">Ajouter une matière grasse</option>
-                <option value="3">Ajouter un produit sucré</option>
+                <option value="3">Ajouter un produit</option>
                 
             </select>
         </form>
