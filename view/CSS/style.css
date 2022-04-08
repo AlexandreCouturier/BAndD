@@ -170,3 +170,22 @@ figure.droite{
         flex-wrap: wrap;
     }
 }
+
+footer{
+
+    logos:
+    display:flex;
+    width: 200px;
+    height: 200px;
+    margin left: 30px;
+}
+
+div ul li {
+    display:flex;
+    justify-content: center;
+
+}
+nav class{
+
+
+}
