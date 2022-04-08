@@ -9,24 +9,40 @@
 
 </head>
 <body>
-<a href="../../../BAndD/router/routerFeculent.php?action=all">toute les feculent</a>
+<a href="../../../BAndD/router/routerFeculent.php?action=all">tout les feculent</a>
 
 
     <form action="../../../BAndD/router/routerFeculent.php" method="post">
 
         <input type="hidden" name="id" value="<?=$Feculent['idFeculent']?>">
 
-        <label for = "productName"> name </label>
+        <label for = "productName"> Nom </label>
         <input type = "text" name = "productName" id = "productName" required value="<?=$Feculent['productName']?>"> <br>
 
         <label for = "originPlant"> origin de la plante </label> 
         <input type = "text" name = "originPlant" id = "originPlant" value="<?=$Feculent['originPlant']?>" required> <br>
 
-        <label for = "transform"> transforme </label> 
-        <input type = "text" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" required> <br>
+        <p>Transformé</p>
+        <div>
+        <label for = "transform">oui</label> 
+        <input type = "radio" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" required> <br>
+        </div>
 
-        <label for = "cooked"> preparé ou pas</label>
-        <input type = "text" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>"> <br>
+        <div>
+        <label for = "transform">non</label> 
+        <input type = "radio" name = "transform" id = "transform" value="<?=$Feculent['transform']?>" required> <br>
+        </div>
+
+
+        <p></p>
+        <div>
+        <label for = "cooked"> preparé</label>
+        <input type = "radio" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>" required> <br>
+        </div>
+        <div>
+        <label for = "cooked"> preparé</label>
+        <input type = "radio" name = "cooked" id = "cooked" value="<?=$Feculent['cooked']?>" required> <br>
+        </div>
 
         <label for="Envoyer"></label>
         <input type="submit" name="submit"  value="Envoyer">

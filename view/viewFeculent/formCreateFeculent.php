@@ -12,19 +12,33 @@
 
     <form action="../../../BAndD/router/routerFeculent.php" method="post">
 
-        <label for="productName">productName</label>
-        <input type="text" name="productName" id="productName">
+        <label for="productName">Nom</label>
+        <input type="text" name="productName" id="productName" required>
 
-        <label for="originPlant">originPlant</label>
-        <input type="text" name="originPlant" id="">
+        <label for="originPlant">origine de la Plante</label>
+        <input type="text" name="originPlant" id="" required>
 
-        <label for="transform">transform</label>
-        <input type="text" name="transform" id="transform">
+        <p>Transformé</p>
+    <div>   
+        <label for="transform">oui</label>
+        <input type="radio" name="transform" id="transform" value="oui" required>
+    </div>
+    <div>   
+        <label for="transform">non</label>
+        <input type="radio" name="transform" id="transform" value="non" required>
+    </div>
 
-        <label for="cooked">disapear</label>
-        <input type="text" name="cooked" id="cooked">
+        <p>Cuit</p>
+    <div>
+        <label for="cooked">oui</label>
+        <input type="radio" name="cooked" id="cooked" value="oui" required>
+    </div>
+    <div>
+        <label for="cooked">non</label>
+        <input type="radio" name="cooked" id="cooked" value="non" required>
+    </div>
 
-        <input type="submit" value="envoyer" name="submit">
+        <input type="submit" value="envoyer" name="submit" required>
     </form>
 </body>
 </html>

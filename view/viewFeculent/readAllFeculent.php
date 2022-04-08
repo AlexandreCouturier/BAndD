@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a href="../../../BAndD/view/viewFeculent/formCreateFeculent.php">ajouter un feculent</a>
+<a href="../../../BAndD/view/viewFeculent/formCreateFeculent.php">AJOUTEZ UN FECULENT</a>
 
 <?php foreach($allFeculent as $Feculent): ?>
         <p><a href="../../../BAndD/router/routerFeculent.php?action=id&id=<?=$Feculent['idFeculent']?>">Afficher cette ID</a></p>

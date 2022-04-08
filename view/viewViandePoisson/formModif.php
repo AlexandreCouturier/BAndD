@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<a href="../../../BAndD/router/routerViandePoisson.php?action=all">toute les viande et poisson oeuf</a>
+<a href="../../../BAndD/router/routerViandePoisson.php?action=all">tout les viande et poisson oeuf</a>
 
 
     <form action="../../../BAndD/router/routerViandePoisson.php" method="post">
