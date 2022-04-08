@@ -251,3 +251,36 @@ h5{
     width: 500px;
     height: 300px;
 }
+/*milkProduct.php*/
+#img_cow{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_cheese{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cheese.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_yogourt{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/yogourt.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+#img_milk{
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetal_milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
