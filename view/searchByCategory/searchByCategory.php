@@ -18,6 +18,10 @@
                 <option value="1">Ajouter un fruit ou un légumes</option>
                 <option value="2">Ajouter une matière grasse</option>
                 <option value="3">Ajouter un produit sucré</option>
+                <option value="4">Ajouter une boisson</option>
+                <option value="5">Ajouter un produit laitier</option>
+                <option value="6">Ajouter une boisson</option>
+                <option value="7">Ajouter une boisson</option>
                 
             </select>
         </form>

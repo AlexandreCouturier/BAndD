@@ -1,5 +1,5 @@
 <?php
-require "../Controller/ControllerOilyMaterial.php";
+require "../controller/ControllerOilyMaterial.php";
 
 if(isset($_GET["action"])){
 

@@ -8,7 +8,7 @@
     <title>Toutes les fruits et légumes enregistrées</title>
 </head>
 <body>
-
+<a href="../../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
     <?php foreach($allFruitAndVegetable as $fruitAndVegetable):?>
 
         <ul>

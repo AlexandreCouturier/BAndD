@@ -1,5 +1,5 @@
 <?php
-require "../Controller/ControllerFruitAndVegetable.php";
+require "../controller/ControllerFruitAndVegetable.php";
 
 if(isset($_GET["action"])){
 

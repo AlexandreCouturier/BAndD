@@ -13,6 +13,10 @@ const select = document.getElementById('choix');
                     case 3:
                         changeURL('../viewSweet/formSweet.php');
                         break;
+                    case 4: 
+                        changeURL('../viewDrink/formDrink.php')
+                    case 5: 
+                        changeURL('../viewDairyProducts/formDairyProducts.php')
                     default:
                         console.log('default');
                 }

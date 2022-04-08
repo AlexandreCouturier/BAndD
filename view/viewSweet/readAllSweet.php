@@ -8,7 +8,7 @@
     <title>Toutes les matières grasses enregistrées</title>
 </head>
 <body>
-
+<a href="../../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
 
     <?php foreach($allSweet as $sweet):?>
 

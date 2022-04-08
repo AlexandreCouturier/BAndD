@@ -11,6 +11,7 @@
 
 <body>
     <a href="../../../BAndD/view/viewDairyProducts/formDairyProducts.php">Formulaire DairyProducts</a>
+    <a href="../../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
     <?php foreach ($allRows as $row) : ?>
         <p>Votre boisson est : </p>
         <?php echo "dhd"; ?>

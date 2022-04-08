@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<?php echo "dans le fichier test.php" ?>
 <body>
 <a href="../view/viewDrink/formDrink.php">Formulaire Drinks</a>
+<a href="../../BAndD/view/searchByCategory/searchByCategory.php">Choisir une catégorie</a>
     <?php foreach($allRows as $row): ?>
     <p>Votre boisson est : </p>
         <?= $row["productName"]?> <br>

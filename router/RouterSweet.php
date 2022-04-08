@@ -1,5 +1,6 @@
 <?php
-require "../Controller/ControllerSweet.php";
+require "../controller/ControllerSweet.php";
+
 
 if(isset($_GET["action"])){
 

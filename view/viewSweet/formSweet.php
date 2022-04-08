@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <form action="../../router/RouterSweet.php" method="POST">
+    <form action="../../../BAndD/router/RouterSweet.php" method="post">
 
         <label for="productName">Nom de l'aliment</label>
         <input type="text" name="productName" id="productName" required>

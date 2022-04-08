@@ -1,6 +1,6 @@
 <?php
 
-require "c:/wamp64/www/BAndD/model/DAO.php";
+require "../../BAndD/model/DAO.php";
 
 class FruitAndVegetable{
     private $idFruitAndVegetable;
