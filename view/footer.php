@@ -13,7 +13,7 @@
                  <a href="./association.php">
                      <li>Associations</li>
                  </a>
-                 <a href="">
+                 <a href="../../BAndD/view/searchByCategory/searchByCategory.php">
                      <li>Ajout Produit</li>
                  </a>
                  <a href="">

@@ -1,10 +1,12 @@
 @font-face {
-    font-family: 'roboto';
-    src: url('../font/Roboto-Regular.ttf');
+    font-family: "sendflowers";
+    src: url("../../view/Fonts/SendFlowers-Regular.ttf") format("truetype");
+
 }
+
 @font-face {
-    font-family: 'flowers';
-    src: url('../font/SendFlowers-Regular.ttf');
+    font-family: "roboto";
+    src: url("../Fonts/Roboto-Regular.ttf");
 }
 body{
     font-family: roboto;
@@ -57,16 +59,23 @@ ul a li{
     background: linear-gradient(to bottom, #36773080, transparent);
 }
 h1{
-    font-family: 'flowers';
+    font-family: 'sendflowers';
     font-size: 40px;
     text-align: center;
     font-weight: normal;
 }
 h2{
-    font-family: 'flowers';
+    font-family: 'sendflowers';
     font-weight: normal;
     font-size: 35px;
     text-align: center;
+}
+h3 {
+    font-family: "sendflowers";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1.8em;
+    font-weight: normal;
 }
 main{
     display: flex;
@@ -84,11 +93,6 @@ main{
 }
 article, p{
     color: #101010;
-}
-h3{
-    text-decoration: underline;
-    color: #367730;
-    font-weight: normal;
 }
 .texteOrange{
     color: #ff9829;
@@ -266,7 +270,7 @@ footer {
     margin: 50px;
     flex-direction: column;
     align-items: center;
-    font-family: 'send flowers';
+    font-family: 'sendflowers';
 }
 
 .footer {
@@ -310,4 +314,351 @@ nav i {
     align-items: center;
 
 
+}
+/*-------------------------ALL CATEGORY-------------------------------------------------*/
+.contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#category {
+    width: 1074px;
+    height: 300px;
+    left: 149px;
+    top: 517px;
+    display: flex;
+    justify-content: center;
+}
+
+#boisson {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/eau_gazeuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#fruit {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/fruits2.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+}
+
+#feculent {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/legumineuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+}
+
+#laitier {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+}
+
+#viande {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/beef_steak.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+}
+
+#gras {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/butter.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    font-size: 1.5em;
+}
+
+#sucrerie {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cup_cake.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1074px;
+    height: 300px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 702px;
+}
+/*drink.php*/
+h2 {
+    font-family: "sendflowers";
+    font-size: 2.3em;
+    color: #367730;
+    text-decoration: underline;
+}
+
+h4 {
+    font-family: "sendflowers";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-family: "roboto";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1em;
+    margin: 0em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#drink {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/eau_gazeuse.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#tea {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/tea.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+    margin-right: 30px;
+}
+
+#coffe {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/coffe.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#otherdrink {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+.descriptioncat {
+    display: flex;
+    
+}
+
+/*vegetables.php*/
+#img_fruit {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/fruit.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_vegetable {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetables.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_fruit2 {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/fruits2.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_vegetable2 {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetables2.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_vegetable3 {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetables3.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+.conclusion {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    height: 300px;
+}
+
+/*milkProduct.php*/
+#img_cow {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_cheese {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cheese.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_yogourt {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/yogourt.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_milk {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/vegetal_milk.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+p {
+    margin: 0px;
+}
+
+/*fat.php*/
+#img_butter {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/butter.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_oil {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/oil_olive.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_sunflower {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/sunflower.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_cream {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/creme_fraiche.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+/*starches.php*/
+#img_bread {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cereal_bread.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_potatoes {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/potatoes.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_rice {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/rice.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+/*sugar.php*/
+#img_cup {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/cup_cake.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
+}
+
+#img_bonbon {
+    box-shadow: inset 0px 0px 40px 35px #FFFFFF;
+    background-image: url("../images/bonbon.jpeg");
+    background-size: cover;
+    border-radius: 146.5px;
+    width: 300px;
+    height: 300px;
 }
