@@ -23,7 +23,7 @@
 
         <div class=descriptioncat>
             <h5>Rôle:</h5>
-            <p>Permet de compenser quotidiennement les pertes urinaires (1 500 ml/j) et fécales (100-150 g/j), ou par voie cutanée (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par voie respiratoire (800 ml/j).</p>
+            <p>Permet de compenser quotidiennement <span>les pertes urinaires</span> (1 500 ml/j) et <span>fécales (100-150 g/j), ou par <span>voie cutanée</span> (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par <span>voie respiratoire</span> (800 ml/j).</p>
         </div>
         
         <div id=otherdrink>
@@ -34,7 +34,7 @@
             <div class=descriptioncat>
                 <h5>Besoins</h5>
                 <p>1,2 L à 2,5 L au minimum selon l’activité physique et les conditions climatiques.
-                Il est conseillé de varier les eaux : du robinet ou en bouteilles (minérales, de source) puisque chacune d’entre elles est plus ou moins composée en minéraux.</p>
+                Il est conseillé de varier les eaux : du <span>robinet</span> ou <span>en bouteilles</span> (minérales, de source) puisque chacune d’entre elles est plus ou moins composée en minéraux.</p>
             </div>
     </div>
 </body>
