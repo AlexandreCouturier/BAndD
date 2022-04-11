@@ -50,7 +50,7 @@ ul a li{
     background: linear-gradient(to bottom, #36773080, transparent);
 }
 h3{
-    font-family: "sendflowers";
+    font-family: "roboto";
     color: #367730;
     text-decoration: underline;
     font-size: 1.8em;
@@ -366,4 +366,10 @@ p{
 }
 span{
     color: #FF9829;
+}
+.section{
+    font-family: "sendflowers";
+    color: #367730;
+    text-decoration: underline;
+    font-size: 1.8em;
 }

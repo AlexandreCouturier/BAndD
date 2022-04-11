@@ -10,17 +10,17 @@
 <body>
 
     <?php
-        require_once "../model/Header.php"
+        require_once "./Header.php"
     ?>
     <div class=contenu>
         <div class=category>
                 <div class=container>
-                    <div id=boisson>
+                    <a href="drink.php"><div id=boisson>
 
-                    </div>
+                    </div></a>
                 
                     <div class=description>
-                        <h3>Les Boissons</h3>
+                        <h3 class=section>Les Boissons</h3>
 
                         <p>
                         Plus qu’indispensable, l’eau est vitale. Notre corps est constitué d’environ 60 à 70 % d’eau. 
@@ -36,27 +36,27 @@
                 <div class=container>
                 
                     <div class=description>
-                        <h3>Fruits & Légumes</h3>
+                        <h3 class=section>Fruits & Légumes</h3>
 
                         <p>
                             Ce groupe d’aliments constitue un rôle fonctionnel et peu énergétique. Les fruits (et a minima les légumes) apportent du fructose. Ce sucre simple donne la saveur sucrée à ces aliments et équivaut énergétiquement au glucose.
                         </p>
                     </div>
-                    <div id=fruit>
+                    <a href="vegetables.php"><div id=fruit>
 
-                    </div>
+                    </div></a>
 
                 </div>
         </div>
 
         <div class=category>
                 <div class=container>
-                    <div id=feculent>
+                    <a href="starches.php"><div id=feculent>
 
-                    </div>
+                    </div></a>
                 
                     <div class=description>
-                        <h3>Féculents</h3>
+                        <h3 class=section>Féculents</h3>
 
                         <p>
                             Cette grande famille regroupe les pommes de terre, les céréales, le pain et les légumes secs... Elle est notre pre- mière source d’énergie et doit représenter la moitié de notre ration alimentaire quotidienne.
@@ -70,26 +70,26 @@
                 <div class=container>
                 
                     <div class=description>
-                        <h3>Produits Laitiers</h3>
+                        <h3 class=section>Produits Laitiers</h3>
 
                         <p>
                             Ces aliments « bâtisseurs » ont un rôle très important pendant l’adolescence puisqu’ils participent au développement de la masse osseuse qui peut doubler pendant la puberté. Les produits laitiers sont nutritionnellement les aliments qui apportent la plus grande diversité d’éléments.
                         </p>
                     </div>
 
-                    <div id=laitier></div>
+                    <a href="milkProduct.php"></a><div id=laitier></div></a>
 
                 </div>
         </div>
 
         <div class=category>
                 <div class=container>
-                    <div id=viande>
+                    <a href=""><div id=viande>
 
-                    </div>
+                    </div></a>
                 
                     <div class=description>
-                        <h3>Viande & Poisson & Oeuf & Légumineuse</h3>
+                        <h3 class=section>Viande & Poisson & Oeuf & Légumineuse</h3>
 
                         <p>
                             Ces aliments sont principalement recommandés pour leur richesse en protéines. La quantité de protéines apportée par la viande, le poisson ou les œufs est similaire. Par contre leurs teneurs en lipides, vitamines et minéraux sont très variables et sont fonction de l’animal et des morceaux cuisinés. C’est pourquoi nous conseillons de varier au maximum l’origine de ces aliments.
@@ -103,25 +103,25 @@
                 <div class=container>
                 
                     <div class=description>
-                        <h3>Matières Grasses</h3>
+                        <h3 class=section>Matières Grasses</h3>
 
                         <p>
                             Les matières grasses regroupent le beurre, la crème fraîche, les huiles et les margarines.
                         </p>
                     </div>
 
-                    <div id=gras></div>
+                    <a href="fat.php"><div id=gras></div></a>
                 </div>
         </div>
 
         <div class=category>
                 <div class=container>
-                    <div id=sucrerie>
+                    <a href="sugar.php"><div id=sucrerie>
 
-                    </div>
+                    </div></a>
                 
                     <div class=description>
-                        <h3>Sucreries</h3>
+                        <h3 class=section>Sucreries</h3>
 
                         <p>
                             Ils regroupent tous les aliments ayant un goût sucré prononcé : chocolat, miel, confiture, viennoiserie, pâte à tartiner... cependant ces aliments apportent également des matières grasses dites « cachées ».
@@ -132,7 +132,10 @@
                 </div>
         </div>
     </div>
-            
+        
+    <?php
+        require_once "./footer.php"
+    ?>
     
 </body>
 </html>

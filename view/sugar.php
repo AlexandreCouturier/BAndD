@@ -10,7 +10,7 @@
 <body>
 
     <?php
-        require_once "../model/Header.php"
+        require_once "./Header.php"
     ?>
     <div class=contenu>
         <h2>Sucrerie</h2>

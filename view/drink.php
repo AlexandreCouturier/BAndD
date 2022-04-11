@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        require_once "../model/Header.php"
+        require_once "./Header.php"
     ?>
 
     <div id=main>
@@ -23,7 +23,7 @@
 
         <div class=descriptioncat>
             <h5>Rôle:</h5>
-            <p>Permet de compenser quotidiennement <span>les pertes urinaires</span> (1 500 ml/j) et <span>fécales (100-150 g/j), ou par <span>voie cutanée</span> (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par <span>voie respiratoire</span> (800 ml/j).</p>
+            <p>Permet de compenser quotidiennement <span>les pertes urinaires</span> (1 500 ml/j) et <span>fécales</span> (100-150 g/j), ou par <span>voie cutanée</span> (pertes sudorales liées aux besoins de la thermorégulation très variable selon les conditions) et par <span>voie respiratoire</span> (800 ml/j).</p>
         </div>
         
         <div id=otherdrink>
